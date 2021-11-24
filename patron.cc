@@ -57,4 +57,27 @@ void Patron::escribir_patron() {
 
 }
 
+void Patron::codificar_msg(int b,const string& msg) {
+
+    BinTree<char> bt_msg;
+
+    //Tenemos que decidif si partimos el mensaje en bloques
+    if ( b >= msg.size() ) {
+
+    }
+
+    if ( b < msg.size() ) {
+
+
+    }
+    
+
+
+}
+
+void Patron::decod(int b) {
+
+
+}
+
 

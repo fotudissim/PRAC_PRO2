@@ -65,6 +65,17 @@ class Patron {
 	*/
 	void escribir_patron();
 
+	/** @brief Escribe la codificación de un mensaje
+	    \pre «b» es un entero mayor que 0 y msg es un string
+	    \post El resultado es la impresión en pantalla de la codificación 
+	*/
+	void codificar_msg(int b,const string& msg);
+
+	/** @brief Escribe la decodificación de un mensaje 
+	    \pre «b» es un entero mayor que 0
+	    \post El resultado es la impresión en pantalla de la decodificación 
+	*/
+	void decod(int b);
   
     private:
 
