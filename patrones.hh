@@ -10,6 +10,7 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
+#include "BinTree.hh"
 //#include <map>
 #endif
 

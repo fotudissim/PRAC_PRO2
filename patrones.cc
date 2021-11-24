@@ -13,15 +13,17 @@ Patrones::Patrones() { }
 
 void Patrones::add_patron() {
 
-  //Como estamos trabajando con un arbol binario, tendremos que usar funciones recursivas inmersivas
-  :w
+    Patron ptr;
+    ptr.inicializar_ptr();
+    cjt_patrones.push_back(ptr);
 
 }
 
 //Consultoras
 bool Patrones::existe_patron(int idp) {
 
-  if ( (( cjt_patrones.size() - idp) < 0) or (idp == 0)) return false;
+  int n = cjt_patrones.size();
+  if ( (( n - idp) < 0) or (idp == 0)) return false;
   return true;
 
 }
@@ -38,17 +40,21 @@ int Patrones::num_ptr() {
 
 void Patrones::leer_patrones(int p) {
 
-  for (int i = 0; i < p; i++) {
+    for (int i = 0; i < p; i++) {
 
-    add_patron();
-    
-  }
+	add_patron();
+
+    }
 
 }
 
 void Patrones::listar_patrones() {
 
+    for(int i = 0; i < cjt_patrones.size(); i++) {
 
+	cjt_patrones[i].escribir_patron();
+
+    }
 
 }
 
