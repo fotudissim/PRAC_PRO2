@@ -41,11 +41,11 @@ void Patron::inicializar_ptr() {
 //Función inmersiva usada en escribir_patron, como no se usa fuera de la implementación de la clase, no la especificamos en los headers
 void out_im_patron(const BinTree<int>& ptr) {
 
-  cout << "(";
-  if ( not ptr.empty() ) cout << ptr.value();
-  out_im_patron(ptr.left());
-  out_im_patron(ptr.right());
-  cout << ")";
+    cout << "(";
+    if ( not ptr.empty() ) cout << ptr.value();
+    out_im_patron(ptr.left());
+    out_im_patron(ptr.right());
+    cout << ")";
 
 }
 
@@ -57,13 +57,33 @@ void Patron::escribir_patron() {
 
 }
 
+//Función usada dentro de la implementación la cual no necesita de su especificación en los headers
+/* 
+   Esta función está inspirada en el funcionamiento de los heaps binarios. Si no lo requiriera la entrega,
+   podriamos trabajar con vectores en vez de árboles binarios interpretandolos como heaps binarios.
+*/
+//Crida inicial: arrel = msg_arbol(missatge,1)
+BinTree<char> msg_arbol(const string& msg, int i) {
+
+  BinTree<char> izq = BinTree<char>();
+  BinTree<char> der = BinTree<char>();
+  int i_izq = 2*i;
+  int i_der = (2*i)+1;
+
+  if ( msg.size() > i_izq - 1 ) izq = msg_arbol(msg,i_izq);
+  if ( msg.size() > i_der - 1 ) der = msg_arbol(msg,i_der);
+
+  return BinTree<char>(msg[i-1],izq,der);
+
+}
+
+
 void Patron::codificar_msg(int b,const string& msg) {
 
-    BinTree<char> bt_msg;
 
     //Tenemos que decidif si partimos el mensaje en bloques
     if ( b >= msg.size() ) {
-
+      
     }
 
     if ( b < msg.size() ) {
