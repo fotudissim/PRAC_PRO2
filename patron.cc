@@ -81,13 +81,38 @@ BinTree<char> msg_arbol(const string& msg, int i) {
 void Patron::codificar_msg(int b,const string& msg) {
 
 
-    //Tenemos que decidif si partimos el mensaje en bloques
+    //Tenemos que decidir si partimos el mensaje en bloques
     if ( b >= msg.size() ) {
-      
+
+	//Generamos un arbol binario a partir de un mensaje.
+	BinTree<char> am;
+	am = msg_arbol(msg,1);
+	//Codificamos el mensaje a partir del patrón
+	
+
     }
 
     if ( b < msg.size() ) {
 
+	int mb = msg.size() / b;
+	for ( int i = 0; i < mb; i++ ) {
+	  string aux; //String auxiliar
+	  if (i == 0) {
+	    copy(msg,msg + b,aux.begin());
+	    //codigo para encriptar
+
+	  }
+	  else if (i == mb - 1) {
+	    copy(msg + (b*(mb-1)), msg+b, aux.begin());
+	    //codigo para encriptar
+
+	  }
+	  else {
+
+
+	  }
+
+	}
 
     }
     
