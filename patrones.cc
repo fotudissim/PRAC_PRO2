@@ -76,6 +76,9 @@ void Patrones::codificar_patron_msg(int idp, int b, const string& msg) {
 
 int Patrones::decod_patron(int idp, int b) {
 
-    cjt_patrones[idp - 1].decod(b);
+    string salt,msg;
+    getline(cin,salt);
+    getline(cin,msg);
+    cjt_patrones[idp - 1].decod(b,msg);
 
 }

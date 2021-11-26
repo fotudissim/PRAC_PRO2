@@ -8,8 +8,9 @@
 
 #ifndef NO_DIAGRAM
 #include <iostream>
-//#include <vector>
-//#include <algorithm>
+#include <vector>
+#include <algorithm>
+#include <string>
 //#include <map>
 #include "BinTree.hh"
 
@@ -72,10 +73,10 @@ class Patron {
 	void codificar_msg(int b,const string& msg);
 
 	/** @brief Escribe la decodificación de un mensaje 
-	    \pre «b» es un entero mayor que 0
+	    \pre «b» es un entero mayor que 0, «msg» es un string
 	    \post El resultado es la impresión en pantalla de la decodificación 
 	*/
-	void decod(int b);
+	void decod(int b,const string& msg);
   
     private:
 
