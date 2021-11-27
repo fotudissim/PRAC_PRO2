@@ -84,9 +84,9 @@ class Patrones {
 
 	/** @brief Decodifica un mensaje no existente mediante el uso de un patrón «idp»
 	    \pre «idp» es un patrón existente (de tipo entero) y «b» un entero mayor que 0 
-	    \post Devuelve «1» si ha ocurrido algún error, en caso contrario, escribe el contenido del mensaje decodificado en «dmsg»
+	    \post Eescribe el contenido del mensaje decodificado 
 	*/
-	int decod_patron(int idp, int b);
+	void decod_patron(int idp, int b);
 
     private:
 

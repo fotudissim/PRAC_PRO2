@@ -81,6 +81,14 @@ class Patron {
     private:
 
 	BinTree<int> ctr_ptr;
+
+
+	void init_ptr_im(BinTree<int>& pb);
+	void out_im_patron(const BinTree<int>& ptr);
+	void pintaPatron(const BinTree<char>& arb, const BinTree<int>& ptr,vector<int>& offsets,int ind);
+	void recorreArb(const BinTree<char>& arb,vector<int>& offsets,int ind);
+
+
 };
 
 #endif

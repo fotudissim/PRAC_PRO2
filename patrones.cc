@@ -65,20 +65,23 @@ void Patrones::codificar_patron(int idp, int b) {
     getline(cin,msg);
   
     cjt_patrones[idp - 1].codificar_msg(b,msg);
+    cout << endl;
 
 }
 
 void Patrones::codificar_patron_msg(int idp, int b, const string& msg) {
 
     cjt_patrones[idp - 1].codificar_msg(b,msg);
+    cout << endl;
 
 }
 
-int Patrones::decod_patron(int idp, int b) {
+void Patrones::decod_patron(int idp, int b) {
 
     string salt,msg;
     getline(cin,salt);
     getline(cin,msg);
     cjt_patrones[idp - 1].decod(b,msg);
+    cout << endl;
 
 }

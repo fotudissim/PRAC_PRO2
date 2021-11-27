@@ -78,7 +78,7 @@ BinTree<char> msg_arbol(const string& msg, int i) {
 }
 
 //Crida inicial: nodo_arbol,raiz_patron,offsets,1
-void pintaPatron(BinTree<char>& arb, BinTree<int>& ptr,vector<int>& offsets,int ind) {
+void Patron::pintaPatron(const BinTree<char>& arb, const BinTree<int>& ptr,vector<int>& offsets,int ind) {
 
     offsets[ind-1] = ptr.value();
     if ( (not arb.left().empty()) and (not ptr.left().empty())) pintaPatron(arb.left(),ptr.left(),offsets,2*ind);
@@ -87,7 +87,7 @@ void pintaPatron(BinTree<char>& arb, BinTree<int>& ptr,vector<int>& offsets,int 
 }
 
 //Crida inicial: raiz_arbol,offsets,1
-void recorreArb(BinTree<char>& arb,vector<int>& offsets,int ind) {
+void Patron::recorreArb(const BinTree<char>& arb,vector<int>& offsets,int ind) {
 
     BinTree<int> ptr = ctr_ptr;
     if (offsets[ind-1] == -1) pintaPatron(arb,ptr,offsets,ind);
