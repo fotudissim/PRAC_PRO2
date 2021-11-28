@@ -42,11 +42,11 @@ class Patron {
 
 	//Destrucoras
 
-  //	/** @brief Destructora por defecto. 
-  //            \pre <em>Cierto</em>
-  //            \post El resultado la destrucción del parámetro implícito
-  //        */ 
-  //	~Patron();
+ 	/** @brief Destructora por defecto. 
+             \pre <em>Cierto</em>
+             \post El resultado la destrucción del parámetro implícito
+        */ 
+	~Patron();
 
 	//Modificadoras
 
@@ -79,11 +79,12 @@ class Patron {
 	void decod(int b,const string& msg);
   
     private:
-
 	BinTree<int> ctr_ptr;
 
 
+
 	void init_ptr_im(BinTree<int>& pb);
+	BinTree<char> msg_arbol(const string& msg, int i);
 	void out_im_patron(const BinTree<int>& ptr);
 	void pintaPatron(const BinTree<char>& arb, const BinTree<int>& ptr,vector<int>& offsets,int ind);
 	void recorreArb(const BinTree<char>& arb,vector<int>& offsets,int ind);

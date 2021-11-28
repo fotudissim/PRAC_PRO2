@@ -10,10 +10,12 @@ using namespace std;
 
 Patron::Patron() { }
 
+Patron::~Patron() { }
+
 //Modificadoras
 
 //Función inmersiva usada en escribir_patron, como no se usa fuera de la implementación de la clase, no la especificamos en los headers
-void init_ptr_im(BinTree<int>& pb) {
+void Patron::init_ptr_im(BinTree<int>& pb) {
 
     int val;
     cin >> val;
@@ -39,7 +41,7 @@ void Patron::inicializar_ptr() {
 
 //Lectura y escritura
 //Función inmersiva usada en escribir_patron, como no se usa fuera de la implementación de la clase, no la especificamos en los headers
-void out_im_patron(const BinTree<int>& ptr) {
+void Patron::out_im_patron(const BinTree<int>& ptr) {
 
     cout << "(";
     if ( not ptr.empty() ) cout << ptr.value();
@@ -63,7 +65,7 @@ void Patron::escribir_patron() {
    podriamos trabajar con vectores en vez de árboles binarios interpretandolos como heaps binarios.
 */
 //Crida inicial: arrel = msg_arbol(missatge,1)
-BinTree<char> msg_arbol(const string& msg, int i) {
+BinTree<char> Patron::msg_arbol(const string& msg, int i) {
 
   BinTree<char> izq = BinTree<char>();
   BinTree<char> der = BinTree<char>();
