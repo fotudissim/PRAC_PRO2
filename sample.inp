@@ -1,0 +1,135 @@
+10
+Resistire_1
+Cuando pierda todas las partidas.
+Resistire_2
+Cuando duerma con la soledad.
+Resistire_3
+Cuando se me cierren las salidas.
+Resistire_4
+Y la noche no me deje en paz.
+Itaca_1
+Quan surts per fer el viatge cap a Itaca
+Qualsevol_nit_1
+Fa una nit clara i tranquila,
+Qualsevol_nit_2
+hi ha la lluna que fa llum,
+Qualsevol_nit_3
+els convidats van arribant
+Qualsevol_nit_4
+i van omplint tota la casa
+Qualsevol_nit_5
+de colors i de perfums.
+2
+4 4
+1 3 3 2 2 4 4 1
+6 9
+4 2 2 4 3 1 4 4 5 1 1 3 1 5 5 5 6 6
+2
+7 0 -1 12 -1 -1 -1
+94 31 -1 -1 63 -1 -1
+listar_mensajes
+listar_rejillas
+listar_patrones
+nuevo_mensaje
+Resistire_1
+Cuando tenga miedo del silencio.
+nuevo_mensaje
+Let_it_be_1
+When I find myself in times of trouble, Mother Mary comes to me
+nm
+Let_it_be_2
+Speaking words of wisdom, let it be.
+nuevo_mensaje
+vie_en_rose_1
+Quand il me prend dans ses bras
+nm
+vie_en_rose_2
+Il me parle tout bas
+nm
+vie_en_rose_3
+Je vois la vie en rose
+nuevo_mensaje
+Hotel_California_5
+So I called up the Captain, "Please bring me my wine". He said, "We haven't had that spirit here since nineteen sixty nine". And still those voices are calling from far away, wake you up in the middle of the night, just to hear them say...
+nueva_rejilla
+6 6
+4 4 2 4 3 1 4 2 5 5 1 5
+nr
+4 4
+1 1 3 1 2 4 4 2
+nueva_rejilla
+4 4
+1 2 3 2 3 4 1 4
+nr
+6 9
+1 1 1 2 2 1 2 5 3 5 3 6 4 3 4 5 4 6
+nuevo_patron
+1 2 4 -1 -1 -1 3 -1 5 -1 -1
+np
+22 88 77 55 -1 -1 -1 -1 -1
+borra_mensaje Resistire_1
+borra_mensaje vie_en_rose
+bm vie_en_rose_2
+lm
+lr
+lp
+codificar_rejilla 1
+Hola, amigo, que tal?
+codificar_rejilla 5
+Hola, amigo, que tal?
+cr 2
+Hola, amigo, que tal?
+codificar_guardado_rejilla Let_it_be_1 4
+cgr Let_it_be_3 1
+cgr vie_en_rose_1 3
+cgr vie_en_rose_1 0
+codificar_guardado_rejilla Qualsevol_nit_1 4
+cgr Qualsevol_nit_1 1
+cgr Resistire_2 2
+cgr Resistire_2 3
+cgr Itaca_1 2
+cgr Hotel_California_5 4
+cgr Hotel_California_5 1
+decodificar_rejilla 4
+Whnd oe mynf i n I t sfieitromlfubesler   ,Mar  me sMo ttyhe o    co  me
+decodificar_rejilla 2
+a H ogol l,?a  q  u,    a  em     ti
+dr 6
+a H ogol l,?a  q  u,    a  em     ti
+dr 3
+a H ogol l,?a  q  u,    a  em     ti
+dr 3
+dCouuae  adnrcmo ns e.d ollaa d 
+dr 1
+lnFiaata   rucan,r ua iil n ta q
+dr 1
+u Slcpeod a I tl"ahipPne, tlC ea bagrm smeiy e ni"we.d isn ,ea Hhh"naa'Wtevd   eh trseihtaprt eiec ieensei nnt n ysn Aei"xnnt.di l hlvosst oieitiaccrnaelseg l  y f f,arwoa mawrnyauo pk eut ih tde dho fmlei  ettnu,ositg  h hj.te h.saare. y m
+codificar_patron 2 15
+Al despertar Gregorio Samsa una man~ana, tras un suen~o intranquilo, se encontro' en su cama convertido en un monstruoso insecto.
+cp 0 15
+No por mucho madrugar...
+cp 3 20
+amanece ma's temprano
+cp 4 32
+no more bla, bla, bla; no more bla, bla, bla; no more bla, bla, bla
+codificar_guardado_patron Resistire_2 1 31
+codificar_guardado_patron Let_it_be_2 5 10
+cgp Hotel_California_5 4 64
+cgp Hotel_California_1 4 64
+cgp Itaca_1 1 23
+cgp Qualsevol_nit_5 2 3
+cgp Let_it_be_1 3 7
+decodificar_patron 3 20
+bodrfdj!nc*u#ufostdrp
+decodificar_patron 20 3
+bodrfdj!nc*u#ufostdrp
+dp 2 3
+c%_b/Ln2S~)_c%_o%Re5MrM
+dp 1 29 
+Juhupo'd|lytm jvz sa'svllkhk:
+dp 4 32
+%h6[&k{Wxewy6[#wBxxZw46F&x$])^6[#ZBmxewc6[#OQx%&6f&`{xxDw%6P#ZBxxew
+dp 2 15
+@,_cdro%R4A2_fRd'Oqhn~rA-S!_5N`?M`m}`.AK_4R!S~5N~rtd.^/_)N4R`.QthknK_3E?E.Cn.Tqn&~%N?S5_#Al!_bnmu%R4I$O?Em?Um~ln.S4R5O3O~)Nrdbs/m
+fin
+
