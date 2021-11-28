@@ -43,18 +43,18 @@ void Patron::inicializar_ptr() {
 //Función inmersiva usada en escribir_patron, como no se usa fuera de la implementación de la clase, no la especificamos en los headers
 void Patron::out_im_patron(const BinTree<int>& ptr) {
 
-    cout << "debug: entra a out_im_patron" << endl;
     cout << "(";
     if ( not ptr.empty() ) cout << ptr.value();
-    out_im_patron(ptr.left());
-    out_im_patron(ptr.right());
+    if ( not ptr.left().empty() ) out_im_patron(ptr.left());
+    else cout << "()";
+    if ( not ptr.right().empty() ) out_im_patron(ptr.right());
+    else cout << "()";
     cout << ")";
 
 }
 
 void Patron::escribir_patron() {
 
-    cout << "debug: entra a escribir_patron" << endl;
     BinTree<int> aux = ctr_ptr;
     out_im_patron(aux);
     cout << endl;
