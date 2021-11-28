@@ -42,11 +42,11 @@ class Patron {
 
 	//Destrucoras
 
-	/** @brief Destructora por defecto. 
-            \pre <em>Cierto</em>
-            \post El resultado la destrucción del parámetro implícito
-        */ 
-	~Patron();
+  //	/** @brief Destructora por defecto. 
+  //            \pre <em>Cierto</em>
+  //            \post El resultado la destrucción del parámetro implícito
+  //        */ 
+  //	~Patron();
 
 	//Modificadoras
 
