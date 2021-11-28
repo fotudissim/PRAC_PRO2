@@ -52,6 +52,7 @@ void Patrones::listar_patrones() {
 
     for(int i = 0; i < cjt_patrones.size(); i++) {
 
+	cout << "Patron " << i + 1 << ":" << endl;
 	cjt_patrones[i].escribir_patron();
 
     }
