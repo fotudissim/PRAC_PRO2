@@ -84,7 +84,6 @@ void Mensajes::leer_mensajes(int m) {
 	cjt_mensajes.insert( make_pair(idm,aux) );
 
     }
-    cout << "mensajes leídos" << endl;
 
 }
 
