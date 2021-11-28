@@ -102,7 +102,7 @@ int main() {
 	  
 	}//final de función 4
 
-	else if (cmd == "listar_mensaje" or cmd == "lm") {
+	else if (cmd == "listar_mensajes" or cmd == "lm") {
 
 	    cout << "#" << cmd << endl;
 	    msgs0.listar_msg();

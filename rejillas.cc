@@ -104,7 +104,6 @@ void Rejillas::leer_rejillas(int r) {
 
 void Rejillas::listar_rejillas() {
 
-  cout << cjt_rejillas.size() << endl;
   for ( int i = 0; i < cjt_rejillas.size(); i++ ) {
 
     cout << "Rejilla " << (i + 1) << endl; //Primera línea
