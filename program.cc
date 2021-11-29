@@ -158,7 +158,7 @@ int main() {
 	    if (not rjs0.existe_rejilla(idr)) cout << "error: la rejilla no existe" << endl;
 	    else {
 
-		if ( rjs0.decod_rj(idr,dmsg) == 1 ) cout << "error: la dimensión del mensaje es inadecuada para la rejilla" << endl;
+		if ( rjs0.decod_rj(idr,dmsg) == 1 ) cout << "error: la dimension del mensaje es inadecuada para la rejilla" << endl;
 		else cout << "\"" << dmsg << "\"" << endl; 
 
 	    }
@@ -189,8 +189,8 @@ int main() {
 	    
             cout << "#" << cmd << " " << idm << " " << idp << " " << b << endl;
 
-            if (not msgs0.existe_msg(idm)) cout << "El mensaje no existe" << endl;
-            else if (not ptrs0.existe_patron(idp)) cout << "El patrón no existe" << endl;
+            if (not msgs0.existe_msg(idm)) cout << "error: el mensaje no existe" << endl;
+            else if (not ptrs0.existe_patron(idp)) cout << "error: el patron no existe" << endl;
             else {
 		string msg = msgs0.ret_msg(idm).ret_contenido();
         	ptrs0.codificar_patron_msg(idp,b,msg);
@@ -205,7 +205,7 @@ int main() {
             cin >> idp >> b;
 
             cout << "#" << cmd << " " << idp << " " << b << endl;
-            if (not ptrs0.existe_patron(idp)) cout << "El patrón no existe" << endl;
+            if (not ptrs0.existe_patron(idp)) cout << "error: el patron no existe" << endl;
             else {
 
         	ptrs0.decod_patron(idp,b);

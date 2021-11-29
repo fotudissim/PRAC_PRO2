@@ -167,15 +167,25 @@ void Patron::decod(int b,const string& msg) {
       //sizess és la variable del tamany del string substring
       vector<int> offsets(sizess,-1); //offsets de los carácteres
       recorreArb(am,offsets,1);
-
-      ////DEBUG
+      
+      //DEBUG
       //for (int o = 0; o < offsets.size(); o++) {
-      //	cout << " " << offsets[o]; 
+      //	cout << offsets[o]; 
       //}
-      ////FIN DEBUG
+      //cout << endl;
+      //for (int o = 0; o < substring.size(); o++) {
+      //	cout << substring[o]; 
+      //}
+      //cout << endl;
+      //cout << "debug:: sizess: " << sizess << endl;
+      //FIN DEBUG
+      
       for (int k = 0; k < sizess; k++) {
-	
-	cout << char(32 + (substring[k] - 32 - offsets[k])%95 );
+
+	char c = substring[k] - offsets[k];
+	while(c < 32) c += 95;
+	  
+      	cout << c;
 
       }
 

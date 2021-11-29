@@ -106,10 +106,10 @@ void Rejillas::listar_rejillas() {
 
   for ( int i = 0; i < cjt_rejillas.size(); i++ ) {
 
-    cout << "Rejilla " << (i + 1) << endl; //Primera línea
+    cout << "Rejilla " << (i + 1) << ":" << endl; //Primera línea
     cout << cjt_rejillas[i].ret_dim() << " " << cjt_rejillas[i].ret_k() << endl; //Segunda Línea
-    //Aqui tenemos que poner EN ORDEN los huecos de la matriz mat_rej
 
+    //Aqui tenemos que poner EN ORDEN los huecos de la matriz mat_rej
     cjt_rejillas[i].escribir_huecos();
   }
 
@@ -136,7 +136,8 @@ void Rejillas::codificar_rejilla_msg(int idr,const string& msg) {
 int Rejillas::decod_rj(int idr, string& dmsg) {
 
     int dim = cjt_rejillas[idr - 1].ret_dim();
-    if ( (dim * dim) % dmsg.size() != 0 ) return 1;
+    //if ( (dim * dim) % dmsg.size() != 0 ) return 1;
+    if ( dmsg.size() % (dim*dim) != 0 ) return 1;
     cjt_rejillas[ idr - 1 ].decodificar(dmsg);
 
     return 0;

@@ -110,23 +110,23 @@ bool Rejilla::valida() {
 
 void Rejilla::escribir_huecos() {
 
-    int c = 1;
-
     for (int rot = 1; rot <= 4; rot++) {
+	int c = 0;
 	for (int i = 0; i < dim; i++) {
 	    for (int j = 0; j < dim; j++) {
-
 		//cout << "abans del if de escribir hueco" << endl;
+	      
 		if (mat_rej[i][j].first == rot) {
 		    cout << "(" << i + 1 << "," << j + 1 << ")";
+		    //if ((i < dim-1 and j < dim-1) or i < dim-1) cout << " ";
+		    ++c;
 		    if (c < k) cout << " ";
-		    c++;
 		}
-		c = 1;
 	    }
 
 	}
 	cout << endl;
+	c = 0;
     }
 
 }
@@ -166,12 +166,8 @@ void Rejilla::codificar(string msg) {
 
 		    if (exit) break;
 		    if ( mat_rej[i][j].first == rot ) {
-			//cout << endl << "debug:[i&j]:" << i << " " << j <<  endl;
-			//cout << endl << "debug:[m]:" << m <<  endl;
 			aux[i][j] = msg[ m ];
-			//cout << endl << "debug: char= " << msg[m] << endl;
 			if (m == msg.size()) {
-			    //cout << "debug:m==msgsize" << endl;
 			    exit = true;
 			}
 			else m++;
@@ -198,37 +194,57 @@ void Rejilla::codificar(string msg) {
 
 void Rejilla::decodificar(string& dmsg) {
 
-    vector< vector<char> > aux( dim , vector<char>(dim, ' ') );
+
+    /* Se ha de hacer una matriz para cada (long_texto/dim²)
+       Es decir, debemos primero hacer un «int box = ceil (msg.size() / (dim * dim))»
+       La variable box nos va a decir cuantas matrices auxiliares necesitaremos
+       Por ende, tendremos que hacer otro bucle «for» para cada
+
+    */
+    double calc = (dmsg.size() * 1.0) / ((dim * dim) * 1.0 ) ;
+    int nbox = ceil(calc);
+    int m = 0; //Con este entero navegaremos por el string «dmsg»
+    
+    vector< vector<char> > aux;
+    bool exit = false;
+
     //Rellenamos la matriz aux
 
-    int m = 0; //Con este entero navegaremos por el string «dmsg»
-    for(int i = 0; i < dim; i++) {
-	for(int j = 0; j < dim; j++) {
+    for(int b = 0; b < nbox; b++) {
 
-	  aux[i][j] = dmsg[m];
-	  m++;
+	vector< vector<char> > aux( dim , vector<char>(dim, ' ') );
+	for(int i = 0; i < dim; i++) {
+	    for(int j = 0; j < dim; j++) {
 
-	}
-    }
+	    if (exit) break;
+	    aux[i][j] = dmsg[m];
 
-    //Una vez rellenada la matriz aux, lo que haremos será decodificar mediante mat_rej el string dmsg
+	    if (m == dmsg.size()) exit = true;
+	    m++;
 
-    //Volvemos a establecer el entero «m» a 0
-    m = 0;
-    //Iteramos por cada rotación
-    for(int rot = 1; rot <= 4; rot++) { 
-	//Iteramos por «mat_rej»
-	for (int i = 0; i < dim; i++) {
-	    for (int j = 0; j < dim; j++) {
-
-		if ( mat_rej[i][j].first == rot ) {
-		    dmsg[m] = aux[i][j];
-		    m++;
-		}
 	    }
-	} // Final de la iteración de mat_rej
-    } // Final iteración por cada rotación
+	}
 
+	//Una vez rellenada la matriz aux, lo que haremos será decodificar mediante mat_rej el string dmsg
+
+	//Volvemos a establecer el entero «m» a 0
+	
+	//Iteramos por cada rotación
+	for(int rot = 1; rot <= 4; rot++) { 
+	    //Iteramos por «mat_rej»
+	    for (int i = 0; i < dim; i++) {
+		for (int j = 0; j < dim; j++) {
+
+		    if (exit) break;
+		    if ( mat_rej[i][j].first == rot ) {
+			dmsg[m] = aux[i][j];
+			if (m == dmsg.size()) exit = true;
+			m++;
+		    }
+		}
+	    } // Final de la iteración de mat_rej
+	} // Final iteración por cada rotación
+    } //Final de iteración por bloques
     
 
 }
