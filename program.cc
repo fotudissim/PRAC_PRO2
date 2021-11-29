@@ -183,7 +183,7 @@ int main() {
 
 	//Descomentar para cuando la entrega final
         else if (cmd == "codificar_guardado_patron" or cmd == "cgp") {
-
+	  while(true) { }
             int idp, b; //«b» es el tamaño de los bloques
             string idm;
             cin >> idp;

@@ -69,6 +69,7 @@ void Patron::escribir_patron() {
 //Crida inicial: arrel = msg_arbol(missatge,1)
 BinTree<char> Patron::msg_arbol(const string& msg, int i) {
 
+  //cout << "debug: entra en msg_arbol" << endl;
   BinTree<char> izq = BinTree<char>();
   BinTree<char> der = BinTree<char>();
   int i_izq = 2*i;
@@ -84,6 +85,8 @@ BinTree<char> Patron::msg_arbol(const string& msg, int i) {
 //Crida inicial: nodo_arbol,raiz_patron,offsets,1
 void Patron::pintaPatron(const BinTree<char>& arb, const BinTree<int>& ptr,vector<int>& offsets,int ind) {
 
+
+  //cout << "debug: entra en pintaPatron" << endl;
     offsets[ind-1] = ptr.value();
     if ( (not arb.left().empty()) and (not ptr.left().empty())) pintaPatron(arb.left(),ptr.left(),offsets,2*ind);
     if ( (not arb.right().empty()) and (not ptr.right().empty())) pintaPatron(arb.right(),ptr.right(),offsets,2*ind+1);
@@ -93,6 +96,7 @@ void Patron::pintaPatron(const BinTree<char>& arb, const BinTree<int>& ptr,vecto
 //Crida inicial: raiz_arbol,offsets,1
 void Patron::recorreArb(const BinTree<char>& arb,vector<int>& offsets,int ind) {
 
+  //cout << "debug: entra en recorreArb" << endl;
     BinTree<int> ptr = ctr_ptr;
     if (offsets[ind-1] == -1) pintaPatron(arb,ptr,offsets,ind);
     if ( (not arb.left().empty()) ) recorreArb(arb.left(),offsets,2*ind);
@@ -102,87 +106,135 @@ void Patron::recorreArb(const BinTree<char>& arb,vector<int>& offsets,int ind) {
 
 void Patron::codificar_msg(int b,const string& msg) {
 
+  //cout << "debug: entra en codificar_msg" << endl;
 
+    int sizemsg = msg.size();
+    //ceiling vago
+    int num_arb = ( sizemsg/b ) + ( sizemsg % b != 0);
+
+    for (int i = 0; i < num_arb; i++) {
+
+      int sizess = b;
+      if (i == num_arb - 1) sizess = sizemsg % b; 
+
+      string substring(sizess,'*');
+      for (int j = 0; ( j < b ) and ( j + (i*b) < sizemsg ) ;j++) {
+
+	substring[j] = msg[i*b + j];
+
+      }
+      cout << "debug substrring: " << substring << endl;
+      BinTree<char> am;
+      am = msg_arbol(substring,1);
+      //Codificamos el mensaje a partir del patrón
+      //sizess és la variable del tamany del string substring
+      vector<int> offsets(sizess,-1); //offsets de los carácteres
+
+      recorreArb(am,offsets,1);
+      cout << "\"";
+      for (int k = 0; k < sizess; k++) {
+	
+	//cout << char(substring[k] + offsets[k]);
+	    cout << char(substring[k] + 1);
+      }
+      cout << "\"";
+
+    } //final del for inicial
+
+
+
+    
     //Tenemos que decidir si partimos el mensaje en bloques
-    if ( b >= msg.size() ) {
+    //if ( b >= msg.size() ) {
+    //	cout << "bishmilla" << endl;
 
-	//Generamos un arbol binario a partir de un mensaje.
-	BinTree<char> am;
-	am = msg_arbol(msg,1);
-	//Codificamos el mensaje a partir del patrón
-	vector<int> offsets(msg.size(),-1); //offsets de los carácteres
+    //	//Generamos un arbol binario a partir de un mensaje.
+    //	BinTree<char> am;
+    //	am = msg_arbol(msg,1);
+    //	//Codificamos el mensaje a partir del patrón
+    //	int n = msg.size();
+    //	cout << n << endl;
+    //	vector<int> offsets(n,-1); //offsets de los carácteres
 
-	recorreArb(am,offsets,1);
-	cout << "\"";
-	for (int i = 0; i < msg.size(); i++) {
-	    //msg[i] += offsets[i]; 
-	    cout << msg[i] + offsets[i];
-	}
-	cout << "\"";
-    }
+    //	recorreArb(am,offsets,1);
+    //	cout << "\"";
+    //	for (int i = 0; i < msg.size(); i++) {
+    //	    //msg[i] += offsets[i]; 
+    //	    cout << msg[i] + offsets[i];
+    //	}
+    //	cout << "\"";
+    //}
 
-    if ( b < msg.size() ) {
+    //if ( b < msg.size() ) {
 
-	int mb = msg.size() / b;
+    //	int mb = msg.size() / b;
 
-	for ( int i = 0; i < mb; i++ ) {
-	    string aux; //String auxiliar
-	    if (i == 0) {
-		copy(msg.begin(),msg.begin() + b,aux.begin());
-		//codigo para encriptar
+    //	//for ( int i = 0; i < mb; i++ ) {
+    //	//    string aux; //String auxiliar
+    //	//    if (i == 0) {
+    //	//	cout << "cum 0" << endl;
+    //	//	copy(msg.begin(),msg.begin() + b,aux.begin());
+    //	//	//codigo para encriptar
 
-		BinTree<char> am;
-		am = msg_arbol(aux,1);
-		//Codificamos el mensaje a partir del patrón
-		vector<int> offsets(aux.size(),-1); //offsets de los carácteres
+    //	//	BinTree<char> am;
+    //	//	am = msg_arbol(aux,1);
+    //	//	//Codificamos el mensaje a partir del patrón
+    //	//	int n = aux.size();
+    //	//	cout << n << endl;
+    //	//	vector<int> offsets(n,-1); //offsets de los carácteres
 
-		recorreArb(am,offsets,1);
-		cout << "\"";
-		for (int i = 0; i < aux.size(); i++) {
-		    cout << aux[i] + offsets[i];
-		}
-		cout << "\"";
+    //	//	recorreArb(am,offsets,1);
+    //	//	cout << "\"";
+    //	//	for (int i = 0; i < aux.size(); i++) {
+    //	//	    cout << aux[i] + offsets[i];
+    //	//	}
+    //	//	cout << "\"";
 
 
-	    }
-	    else if (i == mb - 1) {
-		copy(msg.begin() + (b*(mb-1)), msg.end(), aux.begin());
-		//codigo para encriptar
+    //	//    }
+    //	//    else if (i == mb - 1) {
+    //	//	cout << "cum 1" << endl;
+    //	//	copy(msg.begin() + (b*(mb-1)), msg.end(), aux.begin());
+    //	//	//codigo para encriptar
 
-		BinTree<char> am;
-		am = msg_arbol(aux,1);
-		//Codificamos el mensaje a partir del patrón
-		vector<int> offsets(aux.size(),-1); //offsets de los carácteres
+    //	//	BinTree<char> am;
+    //	//	am = msg_arbol(aux,1);
+    //	//	//Codificamos el mensaje a partir del patrón
+    //	//	int n = aux.size();
+    //	//	cout << n << endl;
+    //	//	vector<int> offsets(n,-1); //offsets de los carácteres
 
-		recorreArb(am,offsets,1);
-		cout << "\"";
-		for (int i = 0; i < aux.size(); i++) {
-		    cout << aux[i] + offsets[i];
-		}
-		cout << "\"";
+    //	//	recorreArb(am,offsets,1);
+    //	//	cout << "\"";
+    //	//	for (int i = 0; i < aux.size(); i++) {
+    //	//	    cout << aux[i] + offsets[i];
+    //	//	}
+    //	//	cout << "\"";
 
-	    }
-	    else {
-		copy(msg.begin() + b*i,(msg.begin() + b*i)+b,aux.begin());
-		//codigo para encriptar
+    //	//    }
+    //	//    else {
+    //	//	copy(msg.begin() + b*i,(msg.begin() + b*i)+b,aux.begin());
+    //	//	//codigo para encriptar
+    //	//	cout << "cum 2" << endl;
+    //	//	BinTree<char> am;
+    //	//	am = msg_arbol(aux,1);
+    //	//	//Codificamos el mensaje a partir del patrón
+    //	//	int n = aux.size();
+    //	//	cout << n << endl;
+    //	//	vector<int> offsets(n,-1); //offsets de los carácteres
 
-		BinTree<char> am;
-		am = msg_arbol(aux,1);
-		//Codificamos el mensaje a partir del patrón
-		vector<int> offsets(aux.size(),-1); //offsets de los carácteres
+    //	//	recorreArb(am,offsets,1);
+    //	//	cout << "\"";
+    //	//	for (int i = 0; i < aux.size(); i++) {
+    //	//	    cout << aux[i] + offsets[i];
+    //	//	}
+    //	//	cout << "\"";
 
-		recorreArb(am,offsets,1);
-		cout << "\"";
-		for (int i = 0; i < aux.size(); i++) {
-		    cout << aux[i] + offsets[i];
-		}
-		cout << "\"";
+    //	//    }
 
-	    }
+    //	//}
 
-	    }
-
-    }
+    //}
     
 
 
