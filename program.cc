@@ -186,15 +186,16 @@ int main() {
             cin >> idm;
             cin >> idp;
             cin >> b;
-
+	    
+            cout << "#" << cmd << " " << idm << " " << idp << " " << b << endl;
 
             if (not msgs0.existe_msg(idm)) cout << "El mensaje no existe" << endl;
             else if (not ptrs0.existe_patron(idp)) cout << "El patrón no existe" << endl;
             else {
-        	ptrs0.codificar_patron_msg(idp,b, msgs0.ret_msg(idm).ret_contenido() );
+		string msg = msgs0.ret_msg(idm).ret_contenido();
+        	ptrs0.codificar_patron_msg(idp,b,msg);
             }
 
-            cout << "#" << cmd << " " << idm << " " << idp << " " << b << endl;
         }//final de función 12
 
 	//Descomentar para cuando la entrega final
@@ -203,6 +204,7 @@ int main() {
             int idp,b;
             cin >> idp >> b;
 
+            cout << "#" << cmd << " " << idp << " " << b << endl;
             if (not ptrs0.existe_patron(idp)) cout << "El patrón no existe" << endl;
             else {
 
