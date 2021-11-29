@@ -175,22 +175,18 @@ int main() {
             cout << "#" << cmd << " " << idp << endl;
 
             if (not ptrs0.existe_patron(idp)) cout << "El patrón no existe" << endl;
-            else {
-              ptrs0.codificar_patron(idp,b);
-            }
-          
+            else ptrs0.codificar_patron(idp,b); 
         }//final de función 11
 
 	//Descomentar para cuando la entrega final
         else if (cmd == "codificar_guardado_patron" or cmd == "cgp") {
-	  while(true) { }
+	  //return 0;
             int idp, b; //«b» es el tamaño de los bloques
             string idm;
-            cin >> idp;
             cin >> idm;
+            cin >> idp;
             cin >> b;
 
-            cout << "#" << cmd << " " << idm << " " << idp << " " << b << endl;
 
             if (not msgs0.existe_msg(idm)) cout << "El mensaje no existe" << endl;
             else if (not ptrs0.existe_patron(idp)) cout << "El patrón no existe" << endl;
@@ -198,6 +194,7 @@ int main() {
         	ptrs0.codificar_patron_msg(idp,b, msgs0.ret_msg(idm).ret_contenido() );
             }
 
+            cout << "#" << cmd << " " << idm << " " << idp << " " << b << endl;
         }//final de función 12
 
 	//Descomentar para cuando la entrega final

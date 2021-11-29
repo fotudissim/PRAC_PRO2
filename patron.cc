@@ -109,13 +109,16 @@ void Patron::codificar_msg(int b,const string& msg) {
   //cout << "debug: entra en codificar_msg" << endl;
 
     int sizemsg = msg.size();
+    int mod = sizemsg%b;
     //ceiling vago
-    int num_arb = ( sizemsg/b ) + ( sizemsg % b != 0);
+    int num_arb = ( sizemsg/b ) + ( mod != 0);
+    
 
+    cout << "\"";
     for (int i = 0; i < num_arb; i++) {
 
       int sizess = b;
-      if (i == num_arb - 1) sizess = sizemsg % b; 
+      if ( (i == num_arb - 1) and (mod != 0) ) sizess = mod; 
 
       string substring(sizess,'*');
       for (int j = 0; ( j < b ) and ( j + (i*b) < sizemsg ) ;j++) {
@@ -123,7 +126,6 @@ void Patron::codificar_msg(int b,const string& msg) {
 	substring[j] = msg[i*b + j];
 
       }
-      cout << "debug substrring: " << substring << endl;
       BinTree<char> am;
       am = msg_arbol(substring,1);
       //Codificamos el mensaje a partir del patrón
@@ -131,16 +133,14 @@ void Patron::codificar_msg(int b,const string& msg) {
       vector<int> offsets(sizess,-1); //offsets de los carácteres
 
       recorreArb(am,offsets,1);
-      cout << "\"";
+
       for (int k = 0; k < sizess; k++) {
 	
-	//cout << char(substring[k] + offsets[k]);
-	    cout << char(substring[k] + 1);
+	cout << char(32 + (substring[k] - 32 + offsets[k])%95 );
       }
-      cout << "\"";
 
     } //final del for inicial
-
+    cout << "\"";
 
 
     
