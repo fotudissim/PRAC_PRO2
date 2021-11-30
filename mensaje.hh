@@ -73,7 +73,10 @@ class Mensaje {
 
     private:
 
+	/**@brief Identificador del mensaje */
 	string id;
+
+	/**@brief Contenido del mensaje */
 	string contenido;
 
 };

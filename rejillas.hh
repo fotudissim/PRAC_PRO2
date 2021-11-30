@@ -87,6 +87,7 @@ class Rejillas {
 
     private:
 
+	/**@brief Vector que contiene las rejillas */
 	vector<Rejilla> cjt_rejillas;
   
 };

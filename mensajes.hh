@@ -83,6 +83,7 @@ class Mensajes {
 
     private:
 
+	/**@brief Contenedor de mensajes */
 	map<string,Mensaje> cjt_mensajes;
 
 };

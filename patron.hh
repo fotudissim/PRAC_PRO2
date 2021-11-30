@@ -79,6 +79,8 @@ class Patron {
 	void decod(int b,const string& msg);
   
     private:
+
+	/**@brief Arbol binario de enteros que contiene el patrón */
 	BinTree<int> ctr_ptr;
 
 	/** @brief Función inmersiva para iniciaizar el árbol binario de enteros «pb»

@@ -130,13 +130,16 @@ class Rejilla {
   
     private:
 
+	/**@brief Dimensión de la rejilla */
 	int dim;
+
+	/**@brief Número de huecos */
 	int k; //número de huecos
 
-
+	/**@brief Vector que almacena los huecos en pairs de enteros */
 	vector < pair<int,int> > huecos; //el primer entero es: fila, el segundo entero es: columna
-  //vector < pair<int,int> > huecos = vector< pair<int,int> >(k)  ; //el primer entero es: fila, el segundo entero es: columna
-  //vector < vector< pair<int,bool> > > mat_rej = vector<vector<pair<int,bool>>>(dim, vector<pair<int,bool>>(dim)) ; //int = número de rotación, bool = ocupado/no ocupado
+
+	/**@brief Matriz que guarda pairs de enteros y booleanos, mostrando orden de rotación y si está lleno o no */
 	vector < vector< pair<int,bool> > > mat_rej;
 
 };

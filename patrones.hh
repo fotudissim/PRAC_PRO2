@@ -90,6 +90,7 @@ class Patrones {
 
     private:
 
+	/**@brief Contenendor de patrones */
 	vector<Patron> cjt_patrones;
 
 };
