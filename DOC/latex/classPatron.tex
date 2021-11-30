@@ -24,6 +24,25 @@ void \mbox{\hyperlink{classPatron_a5e1753829fde709427d441f0b208a76f}{codificar\+
 \begin{DoxyCompactList}\small\item\em Escribe la codificación de un mensaje. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classPatron_ae2cb8bec0fe28e18587e46117c161f56}{decod}} (int b, const string \&msg)
 \begin{DoxyCompactList}\small\item\em Escribe la decodificación de un mensaje. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Métodos privados}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classPatron_a2ebe069a7b6fea9772d6c40ec47ea0b6}{init\+\_\+ptr\+\_\+im}} (\mbox{\hyperlink{classBinTree}{Bin\+Tree}}$<$ int $>$ \&pb)
+\begin{DoxyCompactList}\small\item\em Función inmersiva para iniciaizar el árbol binario de enteros «pb» \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classBinTree}{Bin\+Tree}}$<$ char $>$ \mbox{\hyperlink{classPatron_a777ab76e9068f72c43bdcc15bcd39c86}{msg\+\_\+arbol}} (const string \&msg, int i)
+\begin{DoxyCompactList}\small\item\em Función usada para pasar de string a arbol binario. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPatron_aaaee90f59da44e821b8c15cd58dac2d2}{out\+\_\+im\+\_\+patron}} (const \mbox{\hyperlink{classBinTree}{Bin\+Tree}}$<$ int $>$ \&ptr)
+\begin{DoxyCompactList}\small\item\em Escribe el patrón de forma recursiva. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPatron_ac13eff78569160f165b3b56034a89b50}{pinta\+Patron}} (const \mbox{\hyperlink{classBinTree}{Bin\+Tree}}$<$ char $>$ \&arb, const \mbox{\hyperlink{classBinTree}{Bin\+Tree}}$<$ int $>$ \&ptr, vector$<$ int $>$ \&offsets, int ind)
+\begin{DoxyCompactList}\small\item\em Inicializa el vector$<$int$>$ offsets. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPatron_a66a715a6d590a47ba423f03b6cb86d15}{recorre\+Arb}} (const \mbox{\hyperlink{classBinTree}{Bin\+Tree}}$<$ char $>$ \&arb, vector$<$ int $>$ \&offsets, int ind)
+\begin{DoxyCompactList}\small\item\em Función que llama a $<$pinta\+Patron$>$ y recorre de forma recursiva el arbol arb. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classPatron_a33efd2f2657b53dc4adfdedb9f20d169}\label{classPatron_a33efd2f2657b53dc4adfdedb9f20d169}} 
+\mbox{\hyperlink{classBinTree}{Bin\+Tree}}$<$ int $>$ {\bfseries ctr\+\_\+ptr}
+\begin{DoxyCompactList}\small\item\em Arbol binario de enteros que contiene el patrón. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Descripción detallada}
@@ -130,6 +149,86 @@ Inicializa un patrón.
 \end{DoxyPrecond}
 \begin{DoxyPostcond}{Postcondición}
 El resultado es la inicialización del arbol binario de enteros «ctr\+\_\+ptr» 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classPatron_a2ebe069a7b6fea9772d6c40ec47ea0b6}\label{classPatron_a2ebe069a7b6fea9772d6c40ec47ea0b6}} 
+\index{Patron@{Patron}!init\_ptr\_im@{init\_ptr\_im}}
+\index{init\_ptr\_im@{init\_ptr\_im}!Patron@{Patron}}
+\doxysubsubsection{\texorpdfstring{init\_ptr\_im()}{init\_ptr\_im()}}
+{\footnotesize\ttfamily void Patron\+::init\+\_\+ptr\+\_\+im (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classBinTree}{Bin\+Tree}}$<$ int $>$ \&}]{pb }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Función inmersiva para iniciaizar el árbol binario de enteros «pb» 
+
+\begin{DoxyPrecond}{Precondición}
+«ptr» es un arbol binario de enteros vacío 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultado es la incialización del árbol binario «pb» 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classPatron_a777ab76e9068f72c43bdcc15bcd39c86}\label{classPatron_a777ab76e9068f72c43bdcc15bcd39c86}} 
+\index{Patron@{Patron}!msg\_arbol@{msg\_arbol}}
+\index{msg\_arbol@{msg\_arbol}!Patron@{Patron}}
+\doxysubsubsection{\texorpdfstring{msg\_arbol()}{msg\_arbol()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBinTree}{Bin\+Tree}}$<$ char $>$ Patron\+::msg\+\_\+arbol (\begin{DoxyParamCaption}\item[{const string \&}]{msg,  }\item[{int}]{i }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Función usada para pasar de string a arbol binario. 
+
+\begin{DoxyPrecond}{Precondición}
+«msg» es un string y i == 1 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+La función devuelve un árbol binario de caracteres 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classPatron_aaaee90f59da44e821b8c15cd58dac2d2}\label{classPatron_aaaee90f59da44e821b8c15cd58dac2d2}} 
+\index{Patron@{Patron}!out\_im\_patron@{out\_im\_patron}}
+\index{out\_im\_patron@{out\_im\_patron}!Patron@{Patron}}
+\doxysubsubsection{\texorpdfstring{out\_im\_patron()}{out\_im\_patron()}}
+{\footnotesize\ttfamily void Patron\+::out\+\_\+im\+\_\+patron (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classBinTree}{Bin\+Tree}}$<$ int $>$ \&}]{ptr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Escribe el patrón de forma recursiva. 
+
+\begin{DoxyPrecond}{Precondición}
+«ptr» es un arbol binario de enteros inicializado 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultado es la impresión del valor del nodo del arbol 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classPatron_ac13eff78569160f165b3b56034a89b50}\label{classPatron_ac13eff78569160f165b3b56034a89b50}} 
+\index{Patron@{Patron}!pintaPatron@{pintaPatron}}
+\index{pintaPatron@{pintaPatron}!Patron@{Patron}}
+\doxysubsubsection{\texorpdfstring{pintaPatron()}{pintaPatron()}}
+{\footnotesize\ttfamily void Patron\+::pinta\+Patron (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classBinTree}{Bin\+Tree}}$<$ char $>$ \&}]{arb,  }\item[{const \mbox{\hyperlink{classBinTree}{Bin\+Tree}}$<$ int $>$ \&}]{ptr,  }\item[{vector$<$ int $>$ \&}]{offsets,  }\item[{int}]{ind }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Inicializa el vector$<$int$>$ offsets. 
+
+\begin{DoxyPrecond}{Precondición}
+«arb» es un arbol binario de chars inicializado, ptr es un arbol binario de enteros inicializado, ind es un entero == 1 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultado es la inicializacion de «offsets» 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classPatron_a66a715a6d590a47ba423f03b6cb86d15}\label{classPatron_a66a715a6d590a47ba423f03b6cb86d15}} 
+\index{Patron@{Patron}!recorreArb@{recorreArb}}
+\index{recorreArb@{recorreArb}!Patron@{Patron}}
+\doxysubsubsection{\texorpdfstring{recorreArb()}{recorreArb()}}
+{\footnotesize\ttfamily void Patron\+::recorre\+Arb (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classBinTree}{Bin\+Tree}}$<$ char $>$ \&}]{arb,  }\item[{vector$<$ int $>$ \&}]{offsets,  }\item[{int}]{ind }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Función que llama a $<$pinta\+Patron$>$ y recorre de forma recursiva el arbol arb. 
+
+\begin{DoxyPrecond}{Precondición}
+«arb» es un arbol binario de chars inicializado, ptr es un arbol binario de enteros inicializado, ind es un entero \texorpdfstring{$>$}{>}= 1 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultado es la inicializacion de «offsets» mediante el uso de $<$pinta\+Patron$>$ 
 \end{DoxyPostcond}
 
 

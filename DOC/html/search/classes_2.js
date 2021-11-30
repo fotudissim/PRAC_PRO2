@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['patron_0',['Patron',['../classPatron.html',1,'']]],
-  ['patrones_1',['Patrones',['../classPatrones.html',1,'']]]
+  ['node_0',['Node',['../structBinTree_1_1Node.html',1,'BinTree']]]
 ];

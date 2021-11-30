@@ -65,6 +65,8 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Métodos públicos</a> &#124;
+<a href="#pri-methods">Métodos privados</a> &#124;
+<a href="#pri-attribs">Atributos privados</a> &#124;
 <a href="classPatron-members.html">Lista de todos los miembros</a>  </div>
   <div class="headertitle"><div class="title">Referencia de la Clase Patron</div></div>
 </div><!--header-->
@@ -95,6 +97,31 @@ Métodos públicos</h2></td></tr>
 <tr class="memitem:ae2cb8bec0fe28e18587e46117c161f56"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPatron.html#ae2cb8bec0fe28e18587e46117c161f56">decod</a> (int b, const string &amp;msg)</td></tr>
 <tr class="memdesc:ae2cb8bec0fe28e18587e46117c161f56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Escribe la decodificación de un mensaje.  <a href="classPatron.html#ae2cb8bec0fe28e18587e46117c161f56">Más...</a><br /></td></tr>
 <tr class="separator:ae2cb8bec0fe28e18587e46117c161f56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Métodos privados</h2></td></tr>
+<tr class="memitem:a2ebe069a7b6fea9772d6c40ec47ea0b6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPatron.html#a2ebe069a7b6fea9772d6c40ec47ea0b6">init_ptr_im</a> (<a class="el" href="classBinTree.html">BinTree</a>&lt; int &gt; &amp;pb)</td></tr>
+<tr class="memdesc:a2ebe069a7b6fea9772d6c40ec47ea0b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Función inmersiva para iniciaizar el árbol binario de enteros «pb»  <a href="classPatron.html#a2ebe069a7b6fea9772d6c40ec47ea0b6">Más...</a><br /></td></tr>
+<tr class="separator:a2ebe069a7b6fea9772d6c40ec47ea0b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a777ab76e9068f72c43bdcc15bcd39c86"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classBinTree.html">BinTree</a>&lt; char &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPatron.html#a777ab76e9068f72c43bdcc15bcd39c86">msg_arbol</a> (const string &amp;msg, int i)</td></tr>
+<tr class="memdesc:a777ab76e9068f72c43bdcc15bcd39c86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Función usada para pasar de string a arbol binario.  <a href="classPatron.html#a777ab76e9068f72c43bdcc15bcd39c86">Más...</a><br /></td></tr>
+<tr class="separator:a777ab76e9068f72c43bdcc15bcd39c86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaaee90f59da44e821b8c15cd58dac2d2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPatron.html#aaaee90f59da44e821b8c15cd58dac2d2">out_im_patron</a> (const <a class="el" href="classBinTree.html">BinTree</a>&lt; int &gt; &amp;ptr)</td></tr>
+<tr class="memdesc:aaaee90f59da44e821b8c15cd58dac2d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Escribe el patrón de forma recursiva.  <a href="classPatron.html#aaaee90f59da44e821b8c15cd58dac2d2">Más...</a><br /></td></tr>
+<tr class="separator:aaaee90f59da44e821b8c15cd58dac2d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac13eff78569160f165b3b56034a89b50"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPatron.html#ac13eff78569160f165b3b56034a89b50">pintaPatron</a> (const <a class="el" href="classBinTree.html">BinTree</a>&lt; char &gt; &amp;arb, const <a class="el" href="classBinTree.html">BinTree</a>&lt; int &gt; &amp;ptr, vector&lt; int &gt; &amp;offsets, int ind)</td></tr>
+<tr class="memdesc:ac13eff78569160f165b3b56034a89b50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inicializa el vector&lt;int&gt; offsets.  <a href="classPatron.html#ac13eff78569160f165b3b56034a89b50">Más...</a><br /></td></tr>
+<tr class="separator:ac13eff78569160f165b3b56034a89b50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66a715a6d590a47ba423f03b6cb86d15"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPatron.html#a66a715a6d590a47ba423f03b6cb86d15">recorreArb</a> (const <a class="el" href="classBinTree.html">BinTree</a>&lt; char &gt; &amp;arb, vector&lt; int &gt; &amp;offsets, int ind)</td></tr>
+<tr class="memdesc:a66a715a6d590a47ba423f03b6cb86d15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Función que llama a &lt;pintaPatron&gt; y recorre de forma recursiva el arbol arb.  <a href="classPatron.html#a66a715a6d590a47ba423f03b6cb86d15">Más...</a><br /></td></tr>
+<tr class="separator:a66a715a6d590a47ba423f03b6cb86d15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Atributos privados</h2></td></tr>
+<tr class="memitem:a33efd2f2657b53dc4adfdedb9f20d169"><td class="memItemLeft" align="right" valign="top"><a id="a33efd2f2657b53dc4adfdedb9f20d169" name="a33efd2f2657b53dc4adfdedb9f20d169"></a>
+<a class="el" href="classBinTree.html">BinTree</a>&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ctr_ptr</b></td></tr>
+<tr class="memdesc:a33efd2f2657b53dc4adfdedb9f20d169"><td class="mdescLeft">&#160;</td><td class="mdescRight">Arbol binario de enteros que contiene el patrón. <br /></td></tr>
+<tr class="separator:a33efd2f2657b53dc4adfdedb9f20d169"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Descripción detallada</h2>
 <div class="textblock"><p >Representa un patrón. </p>
@@ -246,6 +273,204 @@ Métodos públicos</h2></td></tr>
 <p>Inicializa un patrón. </p>
 <dl class="section pre"><dt>Precondición</dt><dd><em>Cierto</em> </dd></dl>
 <dl class="section post"><dt>Postcondición</dt><dd>El resultado es la inicialización del arbol binario de enteros «ctr_ptr» </dd></dl>
+
+</div>
+</div>
+<a id="a2ebe069a7b6fea9772d6c40ec47ea0b6" name="a2ebe069a7b6fea9772d6c40ec47ea0b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ebe069a7b6fea9772d6c40ec47ea0b6">&#9670;&nbsp;</a></span>init_ptr_im()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Patron::init_ptr_im </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classBinTree.html">BinTree</a>&lt; int &gt; &amp;&#160;</td>
+          <td class="paramname"><em>pb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Función inmersiva para iniciaizar el árbol binario de enteros «pb» </p>
+<dl class="section pre"><dt>Precondición</dt><dd>«ptr» es un arbol binario de enteros vacío </dd></dl>
+<dl class="section post"><dt>Postcondición</dt><dd>El resultado es la incialización del árbol binario «pb» </dd></dl>
+
+</div>
+</div>
+<a id="a777ab76e9068f72c43bdcc15bcd39c86" name="a777ab76e9068f72c43bdcc15bcd39c86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a777ab76e9068f72c43bdcc15bcd39c86">&#9670;&nbsp;</a></span>msg_arbol()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classBinTree.html">BinTree</a>&lt; char &gt; Patron::msg_arbol </td>
+          <td>(</td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>msg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>i</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Función usada para pasar de string a arbol binario. </p>
+<dl class="section pre"><dt>Precondición</dt><dd>«msg» es un string y i == 1 </dd></dl>
+<dl class="section post"><dt>Postcondición</dt><dd>La función devuelve un árbol binario de caracteres </dd></dl>
+
+</div>
+</div>
+<a id="aaaee90f59da44e821b8c15cd58dac2d2" name="aaaee90f59da44e821b8c15cd58dac2d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaaee90f59da44e821b8c15cd58dac2d2">&#9670;&nbsp;</a></span>out_im_patron()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Patron::out_im_patron </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classBinTree.html">BinTree</a>&lt; int &gt; &amp;&#160;</td>
+          <td class="paramname"><em>ptr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Escribe el patrón de forma recursiva. </p>
+<dl class="section pre"><dt>Precondición</dt><dd>«ptr» es un arbol binario de enteros inicializado </dd></dl>
+<dl class="section post"><dt>Postcondición</dt><dd>El resultado es la impresión del valor del nodo del arbol </dd></dl>
+
+</div>
+</div>
+<a id="ac13eff78569160f165b3b56034a89b50" name="ac13eff78569160f165b3b56034a89b50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac13eff78569160f165b3b56034a89b50">&#9670;&nbsp;</a></span>pintaPatron()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Patron::pintaPatron </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classBinTree.html">BinTree</a>&lt; char &gt; &amp;&#160;</td>
+          <td class="paramname"><em>arb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classBinTree.html">BinTree</a>&lt; int &gt; &amp;&#160;</td>
+          <td class="paramname"><em>ptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vector&lt; int &gt; &amp;&#160;</td>
+          <td class="paramname"><em>offsets</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>ind</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Inicializa el vector&lt;int&gt; offsets. </p>
+<dl class="section pre"><dt>Precondición</dt><dd>«arb» es un arbol binario de chars inicializado, ptr es un arbol binario de enteros inicializado, ind es un entero == 1 </dd></dl>
+<dl class="section post"><dt>Postcondición</dt><dd>El resultado es la inicializacion de «offsets» </dd></dl>
+
+</div>
+</div>
+<a id="a66a715a6d590a47ba423f03b6cb86d15" name="a66a715a6d590a47ba423f03b6cb86d15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66a715a6d590a47ba423f03b6cb86d15">&#9670;&nbsp;</a></span>recorreArb()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Patron::recorreArb </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classBinTree.html">BinTree</a>&lt; char &gt; &amp;&#160;</td>
+          <td class="paramname"><em>arb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vector&lt; int &gt; &amp;&#160;</td>
+          <td class="paramname"><em>offsets</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>ind</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Función que llama a &lt;pintaPatron&gt; y recorre de forma recursiva el arbol arb. </p>
+<dl class="section pre"><dt>Precondición</dt><dd>«arb» es un arbol binario de chars inicializado, ptr es un arbol binario de enteros inicializado, ind es un entero &gt;= 1 </dd></dl>
+<dl class="section post"><dt>Postcondición</dt><dd>El resultado es la inicializacion de «offsets» mediante el uso de &lt;pintaPatron&gt; </dd></dl>
 
 </div>
 </div>

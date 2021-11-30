@@ -17,12 +17,12 @@
 \DoxyCodeLine{14 \textcolor{keyword}{template} <\textcolor{keyword}{typename} T>}
 \DoxyCodeLine{15 \textcolor{keyword}{class }\mbox{\hyperlink{classBinTree}{BinTree}} \{}
 \DoxyCodeLine{16 }
-\DoxyCodeLine{17     \textcolor{keyword}{struct }Node \{}
+\DoxyCodeLine{17     \textcolor{keyword}{struct }\mbox{\hyperlink{structBinTree_1_1Node}{Node}} \{}
 \DoxyCodeLine{18         T x;}
 \DoxyCodeLine{19         shared\_ptr<Node> left;}
 \DoxyCodeLine{20         shared\_ptr<Node> right;}
 \DoxyCodeLine{21 }
-\DoxyCodeLine{22         Node (\textcolor{keyword}{const} T\& x, shared\_ptr<Node> left, shared\_ptr<Node> right)}
+\DoxyCodeLine{22         \mbox{\hyperlink{structBinTree_1_1Node}{Node}} (\textcolor{keyword}{const} T\& x, shared\_ptr<Node> left, shared\_ptr<Node> right)}
 \DoxyCodeLine{23         :   x(x), left(left), right(right)}
 \DoxyCodeLine{24         \{   \}}
 \DoxyCodeLine{25 }
@@ -45,7 +45,7 @@
 \DoxyCodeLine{42 }
 \DoxyCodeLine{43     \textcolor{comment}{// Constructs an empty tree. Θ(1).}}
 \DoxyCodeLine{44     \mbox{\hyperlink{classBinTree}{BinTree}} ()}
-\DoxyCodeLine{45     :   p(\textcolor{keyword}{nullptr})}
+\DoxyCodeLine{45     :   p(nullptr)}
 \DoxyCodeLine{46     \{   \}}
 \DoxyCodeLine{47 }
 \DoxyCodeLine{48     \textcolor{comment}{// Constructs a tree with a value x and no subtrees. Θ(1).}}
