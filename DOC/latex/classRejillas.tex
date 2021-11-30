@@ -1,0 +1,191 @@
+\hypertarget{classRejillas}{}\doxysection{Referencia de la Clase Rejillas}
+\label{classRejillas}\index{Rejillas@{Rejillas}}
+
+
+Representa el conjunto de rejillas.  
+
+
+
+
+{\ttfamily \#include $<$rejillas.\+hh$>$}
+
+\doxysubsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classRejillas_a966e7a4e132d5f8939e17a93ba0f9d1a}{Rejillas}} ()
+\begin{DoxyCompactList}\small\item\em Constructora de la clase \mbox{\hyperlink{classRejillas}{Rejillas}}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classRejillas_a6f5eaafe0dfcff3ef35e3b87d3a32b10}{add\+\_\+rejilla}} (int n, int k)
+\begin{DoxyCompactList}\small\item\em Comprueba que una rejilla es válida y la añade al conjunto de rejillas. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classRejillas_a20d4fd487cb999dae7cfb2855ec09641}{num\+\_\+rejillas}} ()
+\begin{DoxyCompactList}\small\item\em Devuelve el tamaño del conjunto de rejillas. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classRejillas_a5bc14f47343b4b51eef568fb1fabbda5}{existe\+\_\+rejilla}} (int idr)
+\begin{DoxyCompactList}\small\item\em Devuelve true/false en función de la existencia de una rejilla «idr» \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classRejillas_a6427ef5cdceeba1fdb0e4c91451dac13}{leer\+\_\+rejillas}} (int r)
+\begin{DoxyCompactList}\small\item\em Lee una secuencia de mensajes del parámetro implícito. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classRejillas_a5dc09eb6fb66046562bed23526d6653a}{listar\+\_\+rejillas}} ()
+\begin{DoxyCompactList}\small\item\em Escribe una lista de las rejillas existentes en orden creciente por identificador. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classRejillas_a426601f3d0564d467695002751ead192}{codificar\+\_\+rejilla}} (int idr)
+\begin{DoxyCompactList}\small\item\em Codifica un mensaje (no existente) mediante el uso de una rejilla «idr» \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classRejillas_a63330e135bdd68772bc0f4193bb8c973}{codificar\+\_\+rejilla\+\_\+msg}} (int idr, const string \&msg)
+\begin{DoxyCompactList}\small\item\em Codifica un mensaje existente mediante el uso de una rejilla «idr» \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classRejillas_a25d79497a890aa44fa194dd46ca6fb03}{decod\+\_\+rj}} (int idr, string \&dmsg)
+\begin{DoxyCompactList}\small\item\em Decodifica un mensaje no existente mediante el uso de una rejilla «idr» \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+Representa el conjunto de rejillas. 
+
+\doxysubsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{classRejillas_a966e7a4e132d5f8939e17a93ba0f9d1a}\label{classRejillas_a966e7a4e132d5f8939e17a93ba0f9d1a}} 
+\index{Rejillas@{Rejillas}!Rejillas@{Rejillas}}
+\index{Rejillas@{Rejillas}!Rejillas@{Rejillas}}
+\doxysubsubsection{\texorpdfstring{Rejillas()}{Rejillas()}}
+{\footnotesize\ttfamily Rejillas\+::\+Rejillas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructora de la clase \mbox{\hyperlink{classRejillas}{Rejillas}}. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape Cierto\texorpdfstring{$<$}{<}{\itshape } \texorpdfstring{$>$}{>} }
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+{\itshape  El resultado es un conjunto de rejillas no inicializado }
+\end{DoxyPostcond}
+
+
+\doxysubsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{classRejillas_a6f5eaafe0dfcff3ef35e3b87d3a32b10}\label{classRejillas_a6f5eaafe0dfcff3ef35e3b87d3a32b10}} 
+\index{Rejillas@{Rejillas}!add\_rejilla@{add\_rejilla}}
+\index{add\_rejilla@{add\_rejilla}!Rejillas@{Rejillas}}
+\doxysubsubsection{\texorpdfstring{add\_rejilla()}{add\_rejilla()}}
+{\footnotesize\ttfamily int Rejillas\+::add\+\_\+rejilla (\begin{DoxyParamCaption}\item[{int}]{n,  }\item[{int}]{k }\end{DoxyParamCaption})}
+
+
+
+Comprueba que una rejilla es válida y la añade al conjunto de rejillas. 
+
+\begin{DoxyPrecond}{Precondición}
+0 \texorpdfstring{$<$}{<} n,k 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Retorna 0 si se ha podido añadir con exito la rejilla o 1/2 si ha habido un error 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classRejillas_a426601f3d0564d467695002751ead192}\label{classRejillas_a426601f3d0564d467695002751ead192}} 
+\index{Rejillas@{Rejillas}!codificar\_rejilla@{codificar\_rejilla}}
+\index{codificar\_rejilla@{codificar\_rejilla}!Rejillas@{Rejillas}}
+\doxysubsubsection{\texorpdfstring{codificar\_rejilla()}{codificar\_rejilla()}}
+{\footnotesize\ttfamily void Rejillas\+::codificar\+\_\+rejilla (\begin{DoxyParamCaption}\item[{int}]{idr }\end{DoxyParamCaption})}
+
+
+
+Codifica un mensaje (no existente) mediante el uso de una rejilla «idr» 
+
+\begin{DoxyPrecond}{Precondición}
+«idr» es una rejilla existente (siendo este un entero) 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se imprime el mensaje codificado 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classRejillas_a63330e135bdd68772bc0f4193bb8c973}\label{classRejillas_a63330e135bdd68772bc0f4193bb8c973}} 
+\index{Rejillas@{Rejillas}!codificar\_rejilla\_msg@{codificar\_rejilla\_msg}}
+\index{codificar\_rejilla\_msg@{codificar\_rejilla\_msg}!Rejillas@{Rejillas}}
+\doxysubsubsection{\texorpdfstring{codificar\_rejilla\_msg()}{codificar\_rejilla\_msg()}}
+{\footnotesize\ttfamily void Rejillas\+::codificar\+\_\+rejilla\+\_\+msg (\begin{DoxyParamCaption}\item[{int}]{idr,  }\item[{const string \&}]{msg }\end{DoxyParamCaption})}
+
+
+
+Codifica un mensaje existente mediante el uso de una rejilla «idr» 
+
+\begin{DoxyPrecond}{Precondición}
+«idr» es el id de una rejilla existente, y msg un string no inicializado («idr» es un entero) 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se imprime el mensaje codificado 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classRejillas_a25d79497a890aa44fa194dd46ca6fb03}\label{classRejillas_a25d79497a890aa44fa194dd46ca6fb03}} 
+\index{Rejillas@{Rejillas}!decod\_rj@{decod\_rj}}
+\index{decod\_rj@{decod\_rj}!Rejillas@{Rejillas}}
+\doxysubsubsection{\texorpdfstring{decod\_rj()}{decod\_rj()}}
+{\footnotesize\ttfamily int Rejillas\+::decod\+\_\+rj (\begin{DoxyParamCaption}\item[{int}]{idr,  }\item[{string \&}]{dmsg }\end{DoxyParamCaption})}
+
+
+
+Decodifica un mensaje no existente mediante el uso de una rejilla «idr» 
+
+\begin{DoxyPrecond}{Precondición}
+«idr» es una rejilla existente (de tipo entero), y «dmsg» es un string no inicializado 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Devuelve «1» si ha ocurrido algún error, en caso contrario, escribe el contenido del mensaje decodificado en «dmsg» 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classRejillas_a5bc14f47343b4b51eef568fb1fabbda5}\label{classRejillas_a5bc14f47343b4b51eef568fb1fabbda5}} 
+\index{Rejillas@{Rejillas}!existe\_rejilla@{existe\_rejilla}}
+\index{existe\_rejilla@{existe\_rejilla}!Rejillas@{Rejillas}}
+\doxysubsubsection{\texorpdfstring{existe\_rejilla()}{existe\_rejilla()}}
+{\footnotesize\ttfamily bool Rejillas\+::existe\+\_\+rejilla (\begin{DoxyParamCaption}\item[{int}]{idr }\end{DoxyParamCaption})}
+
+
+
+Devuelve true/false en función de la existencia de una rejilla «idr» 
+
+\begin{DoxyPrecond}{Precondición}
+«idr» es un string 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Retorna \char`\"{}true\char`\"{} si existe una rejilla con identificador «idr» en el parámetro implícito 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classRejillas_a6427ef5cdceeba1fdb0e4c91451dac13}\label{classRejillas_a6427ef5cdceeba1fdb0e4c91451dac13}} 
+\index{Rejillas@{Rejillas}!leer\_rejillas@{leer\_rejillas}}
+\index{leer\_rejillas@{leer\_rejillas}!Rejillas@{Rejillas}}
+\doxysubsubsection{\texorpdfstring{leer\_rejillas()}{leer\_rejillas()}}
+{\footnotesize\ttfamily void Rejillas\+::leer\+\_\+rejillas (\begin{DoxyParamCaption}\item[{int}]{r }\end{DoxyParamCaption})}
+
+
+
+Lee una secuencia de mensajes del parámetro implícito. 
+
+\begin{DoxyPrecond}{Precondición}
+El entero «r» ha de ser superior a 0 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El parámetro implícito registra los «r» rejillas 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classRejillas_a5dc09eb6fb66046562bed23526d6653a}\label{classRejillas_a5dc09eb6fb66046562bed23526d6653a}} 
+\index{Rejillas@{Rejillas}!listar\_rejillas@{listar\_rejillas}}
+\index{listar\_rejillas@{listar\_rejillas}!Rejillas@{Rejillas}}
+\doxysubsubsection{\texorpdfstring{listar\_rejillas()}{listar\_rejillas()}}
+{\footnotesize\ttfamily void Rejillas\+::listar\+\_\+rejillas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Escribe una lista de las rejillas existentes en orden creciente por identificador. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape Cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se imprime un listado de los elementos del contenedor del p.\+impl. ordenador por identificador 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classRejillas_a20d4fd487cb999dae7cfb2855ec09641}\label{classRejillas_a20d4fd487cb999dae7cfb2855ec09641}} 
+\index{Rejillas@{Rejillas}!num\_rejillas@{num\_rejillas}}
+\index{num\_rejillas@{num\_rejillas}!Rejillas@{Rejillas}}
+\doxysubsubsection{\texorpdfstring{num\_rejillas()}{num\_rejillas()}}
+{\footnotesize\ttfamily int Rejillas\+::num\+\_\+rejillas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Devuelve el tamaño del conjunto de rejillas. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape Cierto\texorpdfstring{$<$}{<}{\itshape } \texorpdfstring{$>$}{>} }
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+{\itshape  Retorna la cantidad de elementos del contenedor del parámetro implícito }
+\end{DoxyPostcond}
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{rejillas_8hh}{rejillas.\+hh}}\item 
+\mbox{\hyperlink{rejillas_8cc}{rejillas.\+cc}}\end{DoxyCompactItemize}

@@ -1,0 +1,191 @@
+\hypertarget{classPatrones}{}\doxysection{Referencia de la Clase Patrones}
+\label{classPatrones}\index{Patrones@{Patrones}}
+
+
+Representa el conjunto de patrones.  
+
+
+
+
+{\ttfamily \#include $<$patrones.\+hh$>$}
+
+\doxysubsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPatrones_a89e793e6a38e3707812b57e880e0f934}{Patrones}} ()
+\begin{DoxyCompactList}\small\item\em Constructora de la clase \mbox{\hyperlink{classPatrones}{Patrones}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPatrones_aeeb487fe89d2b8e5f38a61f256461162}{add\+\_\+patron}} ()
+\begin{DoxyCompactList}\small\item\em Añade un patrón al conjunto de patrones. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPatrones_a472a1591a8f69e88d73c96540b88fb1e}{existe\+\_\+patron}} (int idp)
+\begin{DoxyCompactList}\small\item\em Devuelve true/false en función de si existe o no un elemento con identificador «idr» \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPatrones_aba1b0d75511211f71fdfeb482f760b48}{num\+\_\+ptr}} ()
+\begin{DoxyCompactList}\small\item\em Devuelve la cantidad de patrones que existen en el conjunto de patrones. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPatrones_ae9d6a4da2c627c93c5e66c05a775636b}{leer\+\_\+patrones}} (int p)
+\begin{DoxyCompactList}\small\item\em Lee una secuencia de mensajes del parámetro implícito. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPatrones_a1002194adcda228ca54added317d9b15}{listar\+\_\+patrones}} ()
+\begin{DoxyCompactList}\small\item\em Escribe en forma de lista los patrones en orden creciente de su identificador. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPatrones_aa5c05b1c29e8b9fdc810dd2cabe9f145}{codificar\+\_\+patron}} (int idp, int b)
+\begin{DoxyCompactList}\small\item\em Codifica un mensaje (no existente) mediante el uso de un patrón «idp» \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPatrones_a7bd1d75977f9b699a25690b19e892207}{codificar\+\_\+patron\+\_\+msg}} (int idp, int b, const string \&msg)
+\begin{DoxyCompactList}\small\item\em Codifica un mensaje existente mediante el uso de un patrón «idp» \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPatrones_a31749ddc8eb334983de5c225db45459e}{decod\+\_\+patron}} (int idp, int b)
+\begin{DoxyCompactList}\small\item\em Decodifica un mensaje no existente mediante el uso de un patrón «idp» \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+Representa el conjunto de patrones. 
+
+\doxysubsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{classPatrones_a89e793e6a38e3707812b57e880e0f934}\label{classPatrones_a89e793e6a38e3707812b57e880e0f934}} 
+\index{Patrones@{Patrones}!Patrones@{Patrones}}
+\index{Patrones@{Patrones}!Patrones@{Patrones}}
+\doxysubsubsection{\texorpdfstring{Patrones()}{Patrones()}}
+{\footnotesize\ttfamily Patrones\+::\+Patrones (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructora de la clase \mbox{\hyperlink{classPatrones}{Patrones}}. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape Cierto\texorpdfstring{$<$}{<}{\itshape } \texorpdfstring{$>$}{>} }
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+{\itshape  El resultado es un conjunto de patrones no inicializado }
+\end{DoxyPostcond}
+
+
+\doxysubsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{classPatrones_aeeb487fe89d2b8e5f38a61f256461162}\label{classPatrones_aeeb487fe89d2b8e5f38a61f256461162}} 
+\index{Patrones@{Patrones}!add\_patron@{add\_patron}}
+\index{add\_patron@{add\_patron}!Patrones@{Patrones}}
+\doxysubsubsection{\texorpdfstring{add\_patron()}{add\_patron()}}
+{\footnotesize\ttfamily void Patrones\+::add\+\_\+patron (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Añade un patrón al conjunto de patrones. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape Cierto\texorpdfstring{$<$}{<}{\itshape } \texorpdfstring{$>$}{>} }
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+{\itshape  Añade un elemento al contenedor del parámetro implícito }
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classPatrones_aa5c05b1c29e8b9fdc810dd2cabe9f145}\label{classPatrones_aa5c05b1c29e8b9fdc810dd2cabe9f145}} 
+\index{Patrones@{Patrones}!codificar\_patron@{codificar\_patron}}
+\index{codificar\_patron@{codificar\_patron}!Patrones@{Patrones}}
+\doxysubsubsection{\texorpdfstring{codificar\_patron()}{codificar\_patron()}}
+{\footnotesize\ttfamily void Patrones\+::codificar\+\_\+patron (\begin{DoxyParamCaption}\item[{int}]{idp,  }\item[{int}]{b }\end{DoxyParamCaption})}
+
+
+
+Codifica un mensaje (no existente) mediante el uso de un patrón «idp» 
+
+\begin{DoxyPrecond}{Precondición}
+«idp» es un patrón existente (siendo este un entero) 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se imprime el mensaje codificado 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classPatrones_a7bd1d75977f9b699a25690b19e892207}\label{classPatrones_a7bd1d75977f9b699a25690b19e892207}} 
+\index{Patrones@{Patrones}!codificar\_patron\_msg@{codificar\_patron\_msg}}
+\index{codificar\_patron\_msg@{codificar\_patron\_msg}!Patrones@{Patrones}}
+\doxysubsubsection{\texorpdfstring{codificar\_patron\_msg()}{codificar\_patron\_msg()}}
+{\footnotesize\ttfamily void Patrones\+::codificar\+\_\+patron\+\_\+msg (\begin{DoxyParamCaption}\item[{int}]{idp,  }\item[{int}]{b,  }\item[{const string \&}]{msg }\end{DoxyParamCaption})}
+
+
+
+Codifica un mensaje existente mediante el uso de un patrón «idp» 
+
+\begin{DoxyPrecond}{Precondición}
+«idp» es el id de un patrón existente (entero), «b» es un entero mayor que 0, «msg» es un string sin inicializar 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se imprime el mensaje codificado 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classPatrones_a31749ddc8eb334983de5c225db45459e}\label{classPatrones_a31749ddc8eb334983de5c225db45459e}} 
+\index{Patrones@{Patrones}!decod\_patron@{decod\_patron}}
+\index{decod\_patron@{decod\_patron}!Patrones@{Patrones}}
+\doxysubsubsection{\texorpdfstring{decod\_patron()}{decod\_patron()}}
+{\footnotesize\ttfamily void Patrones\+::decod\+\_\+patron (\begin{DoxyParamCaption}\item[{int}]{idp,  }\item[{int}]{b }\end{DoxyParamCaption})}
+
+
+
+Decodifica un mensaje no existente mediante el uso de un patrón «idp» 
+
+\begin{DoxyPrecond}{Precondición}
+«idp» es un patrón existente (de tipo entero) y «b» un entero mayor que 0 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Eescribe el contenido del mensaje decodificado 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classPatrones_a472a1591a8f69e88d73c96540b88fb1e}\label{classPatrones_a472a1591a8f69e88d73c96540b88fb1e}} 
+\index{Patrones@{Patrones}!existe\_patron@{existe\_patron}}
+\index{existe\_patron@{existe\_patron}!Patrones@{Patrones}}
+\doxysubsubsection{\texorpdfstring{existe\_patron()}{existe\_patron()}}
+{\footnotesize\ttfamily bool Patrones\+::existe\+\_\+patron (\begin{DoxyParamCaption}\item[{int}]{idp }\end{DoxyParamCaption})}
+
+
+
+Devuelve true/false en función de si existe o no un elemento con identificador «idr» 
+
+\begin{DoxyPrecond}{Precondición}
+«idr» es un entero\+: idr \texorpdfstring{$>$}{>}= 0 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Devuelve true en caso de hallar el elemento en el contenedor, en caso contrario, devuelve false 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classPatrones_ae9d6a4da2c627c93c5e66c05a775636b}\label{classPatrones_ae9d6a4da2c627c93c5e66c05a775636b}} 
+\index{Patrones@{Patrones}!leer\_patrones@{leer\_patrones}}
+\index{leer\_patrones@{leer\_patrones}!Patrones@{Patrones}}
+\doxysubsubsection{\texorpdfstring{leer\_patrones()}{leer\_patrones()}}
+{\footnotesize\ttfamily void Patrones\+::leer\+\_\+patrones (\begin{DoxyParamCaption}\item[{int}]{p }\end{DoxyParamCaption})}
+
+
+
+Lee una secuencia de mensajes del parámetro implícito. 
+
+\begin{DoxyPrecond}{Precondición}
+El entero «p» ha de ser superior a 0 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El parámetro implícito registra los «p» patrones 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classPatrones_a1002194adcda228ca54added317d9b15}\label{classPatrones_a1002194adcda228ca54added317d9b15}} 
+\index{Patrones@{Patrones}!listar\_patrones@{listar\_patrones}}
+\index{listar\_patrones@{listar\_patrones}!Patrones@{Patrones}}
+\doxysubsubsection{\texorpdfstring{listar\_patrones()}{listar\_patrones()}}
+{\footnotesize\ttfamily void Patrones\+::listar\+\_\+patrones (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Escribe en forma de lista los patrones en orden creciente de su identificador. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape Cierto\texorpdfstring{$<$}{<}{\itshape } \texorpdfstring{$>$}{>} }
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+{\itshape  Imprime en orden creciente respecto al identificador de cada elemento del contenedor del p.\+i. }
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classPatrones_aba1b0d75511211f71fdfeb482f760b48}\label{classPatrones_aba1b0d75511211f71fdfeb482f760b48}} 
+\index{Patrones@{Patrones}!num\_ptr@{num\_ptr}}
+\index{num\_ptr@{num\_ptr}!Patrones@{Patrones}}
+\doxysubsubsection{\texorpdfstring{num\_ptr()}{num\_ptr()}}
+{\footnotesize\ttfamily int Patrones\+::num\+\_\+ptr (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Devuelve la cantidad de patrones que existen en el conjunto de patrones. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape Cierto\texorpdfstring{$<$}{<}{\itshape } \texorpdfstring{$>$}{>} }
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+{\itshape  Devuelve cuantos elementos se hallan en el contenedor del parámetro implícito }
+\end{DoxyPostcond}
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{patrones_8hh}{patrones.\+hh}}\item 
+\mbox{\hyperlink{patrones_8cc}{patrones.\+cc}}\end{DoxyCompactItemize}

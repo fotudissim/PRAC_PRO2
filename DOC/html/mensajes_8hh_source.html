@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>PRÁCTICA PRO2: Encriptación de mensajes: Fichero Fuente mensajes.hh</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">PRÁCTICA PRO2: Encriptación de mensajes
+   </div>
+   <div id="projectbrief">Programa para encriptar mensajes en mediante el uso de rejillas y patrones</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.9.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'Buscar','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">mensajes.hh</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="mensajes_8hh.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#ifndef _MENSAJES_</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#define _MENSAJES_</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &quot;<a class="code" href="mensaje_8hh.html">mensaje.hh</a>&quot;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#ifndef NO_DIAGRAM</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &lt;algorithm&gt;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &lt;map&gt;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">using namespace </span>std;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="classMensajes.html">   22</a></span><span class="keyword">class </span><a class="code hl_class" href="classMensajes.html">Mensajes</a> {</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="comment">//Constructores</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment"></span>    <a class="code hl_function" href="classMensajes.html#a35ea792bfc9e0906a1f3ad5520be4735">Mensajes</a>();</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="comment">//Modificadores</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classMensajes.html#a8ba26d2e5f1fa963e27308e5331401b1">add_msg</a>(<span class="keywordtype">string</span> idm);</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classMensajes.html#acb4f5ac154f932c421e9e5b584fb6764">borrar_msg</a>(<span class="keywordtype">string</span> idm);</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="comment">//Consultores</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classMensajes.html#a2aa5b0d0c6c047ccad49ec993b138f87">existe_msg</a>(<span class="keywordtype">string</span> idm);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="classMensajes.html#a5f4a46b8bada2eacf2cf305e3baeb9c2">num_msg</a>();</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <a class="code hl_class" href="classMensaje.html">Mensaje</a> <a class="code hl_function" href="classMensajes.html#ad922f23a55cd7294cb9dc23cf69581a9">ret_msg</a>(<span class="keywordtype">string</span> idm);</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="comment">//Lectura y escritura</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classMensajes.html#a6987c658cc8acbd8fa1a72d98c09296f">leer_mensajes</a>(<span class="keywordtype">int</span> m);</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classMensajes.html#ad15581d3d8348f0e0a1c993b3d01a5e1">listar_msg</a>();</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    map&lt;string,Mensaje&gt; cjt_mensajes;</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>};</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span><span class="preprocessor">#endif  </span></div>
+<div class="ttc" id="aclassMensaje_html"><div class="ttname"><a href="classMensaje.html">Mensaje</a></div><div class="ttdoc">Representa un mensaje.</div><div class="ttdef"><b>Definition:</b> mensaje.hh:23</div></div>
+<div class="ttc" id="aclassMensajes_html"><div class="ttname"><a href="classMensajes.html">Mensajes</a></div><div class="ttdoc">Representa el conjunto de mensajes.</div><div class="ttdef"><b>Definition:</b> mensajes.hh:22</div></div>
+<div class="ttc" id="aclassMensajes_html_a2aa5b0d0c6c047ccad49ec993b138f87"><div class="ttname"><a href="classMensajes.html#a2aa5b0d0c6c047ccad49ec993b138f87">Mensajes::existe_msg</a></div><div class="ttdeci">bool existe_msg(string idm)</div><div class="ttdoc">Comprueba si existe un mensaje según su id en el conjunto de mensajes.</div><div class="ttdef"><b>Definition:</b> mensajes.cc:44</div></div>
+<div class="ttc" id="aclassMensajes_html_a35ea792bfc9e0906a1f3ad5520be4735"><div class="ttname"><a href="classMensajes.html#a35ea792bfc9e0906a1f3ad5520be4735">Mensajes::Mensajes</a></div><div class="ttdeci">Mensajes()</div><div class="ttdoc">Constructora de la clase Mensajes.</div><div class="ttdef"><b>Definition:</b> mensajes.cc:10</div></div>
+<div class="ttc" id="aclassMensajes_html_a5f4a46b8bada2eacf2cf305e3baeb9c2"><div class="ttname"><a href="classMensajes.html#a5f4a46b8bada2eacf2cf305e3baeb9c2">Mensajes::num_msg</a></div><div class="ttdeci">int num_msg()</div><div class="ttdoc">Devuelve la cantidad de mensajes que se hallan en el conjunto de mensajes.</div><div class="ttdef"><b>Definition:</b> mensajes.cc:52</div></div>
+<div class="ttc" id="aclassMensajes_html_a6987c658cc8acbd8fa1a72d98c09296f"><div class="ttname"><a href="classMensajes.html#a6987c658cc8acbd8fa1a72d98c09296f">Mensajes::leer_mensajes</a></div><div class="ttdeci">void leer_mensajes(int m)</div><div class="ttdoc">Lee una secuencia de mensajes del parámetro implícito.</div><div class="ttdef"><b>Definition:</b> mensajes.cc:71</div></div>
+<div class="ttc" id="aclassMensajes_html_a8ba26d2e5f1fa963e27308e5331401b1"><div class="ttname"><a href="classMensajes.html#a8ba26d2e5f1fa963e27308e5331401b1">Mensajes::add_msg</a></div><div class="ttdeci">void add_msg(string idm)</div><div class="ttdoc">Añade un nuevo mensaje con identificador «idm» al conjunto de mensajes.</div><div class="ttdef"><b>Definition:</b> mensajes.cc:14</div></div>
+<div class="ttc" id="aclassMensajes_html_acb4f5ac154f932c421e9e5b584fb6764"><div class="ttname"><a href="classMensajes.html#acb4f5ac154f932c421e9e5b584fb6764">Mensajes::borrar_msg</a></div><div class="ttdeci">void borrar_msg(string idm)</div><div class="ttdoc">Borra un mensaje existente con identificador «idm» del conjunto de mensajes.</div><div class="ttdef"><b>Definition:</b> mensajes.cc:26</div></div>
+<div class="ttc" id="aclassMensajes_html_ad15581d3d8348f0e0a1c993b3d01a5e1"><div class="ttname"><a href="classMensajes.html#ad15581d3d8348f0e0a1c993b3d01a5e1">Mensajes::listar_msg</a></div><div class="ttdeci">void listar_msg()</div><div class="ttdoc">Imprime todos los mensajes en forma de lista en orden alfabético.</div><div class="ttdef"><b>Definition:</b> mensajes.cc:91</div></div>
+<div class="ttc" id="aclassMensajes_html_ad922f23a55cd7294cb9dc23cf69581a9"><div class="ttname"><a href="classMensajes.html#ad922f23a55cd7294cb9dc23cf69581a9">Mensajes::ret_msg</a></div><div class="ttdeci">Mensaje ret_msg(string idm)</div><div class="ttdoc">Devuelve un elemento del contenedor con el respectivo «idm»</div><div class="ttdef"><b>Definition:</b> mensajes.cc:35</div></div>
+<div class="ttc" id="amensaje_8hh_html"><div class="ttname"><a href="mensaje_8hh.html">mensaje.hh</a></div><div class="ttdoc">Especificación de la clase mensaje.hh.</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+</small></address>
+</body>
+</html>

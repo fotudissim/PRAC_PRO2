@@ -1,0 +1,139 @@
+\hypertarget{classPatron}{}\doxysection{Referencia de la Clase Patron}
+\label{classPatron}\index{Patron@{Patron}}
+
+
+Representa un patrón.  
+
+
+
+
+{\ttfamily \#include $<$patron.\+hh$>$}
+
+\doxysubsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPatron_a8664d13f6847795f5e480b758d66ff88}{Patron}} ()
+\begin{DoxyCompactList}\small\item\em Constructora por defecto. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPatron_a79ef889c74a5444af10bb08243b06d99}{$\sim$\+Patron}} ()
+\begin{DoxyCompactList}\small\item\em $\ast$$\ast$ \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPatron_aba7a743e9c3ad9011129ea7b2e396d10}{inicializar\+\_\+ptr}} ()
+\begin{DoxyCompactList}\small\item\em Inicializa un patrón. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPatron_aee2da3fe61d87fd205430717138c7fe7}{escribir\+\_\+patron}} ()
+\begin{DoxyCompactList}\small\item\em Escribe el patrón con paréntesis. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPatron_a5e1753829fde709427d441f0b208a76f}{codificar\+\_\+msg}} (int b, const string \&msg)
+\begin{DoxyCompactList}\small\item\em Escribe la codificación de un mensaje. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPatron_ae2cb8bec0fe28e18587e46117c161f56}{decod}} (int b, const string \&msg)
+\begin{DoxyCompactList}\small\item\em Escribe la decodificación de un mensaje. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+Representa un patrón. 
+
+\doxysubsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{classPatron_a8664d13f6847795f5e480b758d66ff88}\label{classPatron_a8664d13f6847795f5e480b758d66ff88}} 
+\index{Patron@{Patron}!Patron@{Patron}}
+\index{Patron@{Patron}!Patron@{Patron}}
+\doxysubsubsection{\texorpdfstring{Patron()}{Patron()}}
+{\footnotesize\ttfamily Patron\+::\+Patron (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructora por defecto. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape Cierto\texorpdfstring{$<$}{<}{\itshape } \texorpdfstring{$>$}{>} }
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+{\itshape  El resultado es un patrón sin información }
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classPatron_a79ef889c74a5444af10bb08243b06d99}\label{classPatron_a79ef889c74a5444af10bb08243b06d99}} 
+\index{Patron@{Patron}!````~Patron@{$\sim$Patron}}
+\index{````~Patron@{$\sim$Patron}!Patron@{Patron}}
+\doxysubsubsection{\texorpdfstring{$\sim$Patron()}{~Patron()}}
+{\footnotesize\ttfamily Patron\+::$\sim$\+Patron (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+$\ast$$\ast$ 
+
+Constructora con identificador asignado.
+
+Destructora por defecto. \begin{DoxyPrecond}{Precondición}
+{\itshape Cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultado la destrucción del parámetro implícito 
+\end{DoxyPostcond}
+
+
+\doxysubsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{classPatron_a5e1753829fde709427d441f0b208a76f}\label{classPatron_a5e1753829fde709427d441f0b208a76f}} 
+\index{Patron@{Patron}!codificar\_msg@{codificar\_msg}}
+\index{codificar\_msg@{codificar\_msg}!Patron@{Patron}}
+\doxysubsubsection{\texorpdfstring{codificar\_msg()}{codificar\_msg()}}
+{\footnotesize\ttfamily void Patron\+::codificar\+\_\+msg (\begin{DoxyParamCaption}\item[{int}]{b,  }\item[{const string \&}]{msg }\end{DoxyParamCaption})}
+
+
+
+Escribe la codificación de un mensaje. 
+
+\begin{DoxyPrecond}{Precondición}
+«b» es un entero mayor que 0 y msg es un string 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultado es la impresión en pantalla de la codificación 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classPatron_ae2cb8bec0fe28e18587e46117c161f56}\label{classPatron_ae2cb8bec0fe28e18587e46117c161f56}} 
+\index{Patron@{Patron}!decod@{decod}}
+\index{decod@{decod}!Patron@{Patron}}
+\doxysubsubsection{\texorpdfstring{decod()}{decod()}}
+{\footnotesize\ttfamily void Patron\+::decod (\begin{DoxyParamCaption}\item[{int}]{b,  }\item[{const string \&}]{msg }\end{DoxyParamCaption})}
+
+
+
+Escribe la decodificación de un mensaje. 
+
+\begin{DoxyPrecond}{Precondición}
+«b» es un entero mayor que 0, «msg» es un string 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultado es la impresión en pantalla de la decodificación 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classPatron_aee2da3fe61d87fd205430717138c7fe7}\label{classPatron_aee2da3fe61d87fd205430717138c7fe7}} 
+\index{Patron@{Patron}!escribir\_patron@{escribir\_patron}}
+\index{escribir\_patron@{escribir\_patron}!Patron@{Patron}}
+\doxysubsubsection{\texorpdfstring{escribir\_patron()}{escribir\_patron()}}
+{\footnotesize\ttfamily void Patron\+::escribir\+\_\+patron (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Escribe el patrón con paréntesis. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape Cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultado es la impresión en pantalla de los patrones 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classPatron_aba7a743e9c3ad9011129ea7b2e396d10}\label{classPatron_aba7a743e9c3ad9011129ea7b2e396d10}} 
+\index{Patron@{Patron}!inicializar\_ptr@{inicializar\_ptr}}
+\index{inicializar\_ptr@{inicializar\_ptr}!Patron@{Patron}}
+\doxysubsubsection{\texorpdfstring{inicializar\_ptr()}{inicializar\_ptr()}}
+{\footnotesize\ttfamily void Patron\+::inicializar\+\_\+ptr (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Inicializa un patrón. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape Cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultado es la inicialización del arbol binario de enteros «ctr\+\_\+ptr» 
+\end{DoxyPostcond}
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{patron_8hh}{patron.\+hh}}\item 
+\mbox{\hyperlink{patron_8cc}{patron.\+cc}}\end{DoxyCompactItemize}

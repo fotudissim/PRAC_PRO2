@@ -1,0 +1,236 @@
+\hypertarget{classRejilla}{}\doxysection{Referencia de la Clase Rejilla}
+\label{classRejilla}\index{Rejilla@{Rejilla}}
+
+
+Representa una rejilla.  
+
+
+
+
+{\ttfamily \#include $<$rejilla.\+hh$>$}
+
+\doxysubsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classRejilla_a0d4c2d54277ee3862d53d0f673ac8783}{Rejilla}} ()
+\begin{DoxyCompactList}\small\item\em Constructora por defecto. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classRejilla_a1b3fc7a0ac688bc31ff95aa54d1537ba}{Rejilla}} (int n, int npos)
+\begin{DoxyCompactList}\small\item\em Constructora con identificador asignado. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classRejilla_adb9051b1e8343831e7ca2e25c4cefdd5}\label{classRejilla_adb9051b1e8343831e7ca2e25c4cefdd5}} 
+int {\bfseries dim\+\_\+mat} ()
+\item 
+int \mbox{\hyperlink{classRejilla_ae3d0bd306bd785d2bee45d798ae49545}{ret\+\_\+dim}} ()
+\begin{DoxyCompactList}\small\item\em Devuelve la dimensión de la rejilla. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classRejilla_a40a2fd1c1a6377d6d35306fb146b066d}{ret\+\_\+k}} ()
+\begin{DoxyCompactList}\small\item\em Devuelve el tamaño de la rejilla. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classRejilla_a59ace49babfd7a0a7cb0cea26bd808ab}{ret\+\_\+fila}} (int i)
+\begin{DoxyCompactList}\small\item\em Devuelve el valor fila del hueco especificado. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classRejilla_a3d9b89ef4a7adaec47f248f46d338fe9}{ret\+\_\+columna}} (int i)
+\begin{DoxyCompactList}\small\item\em Devuelve el valor columna del hueco especificado. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classRejilla_a3c953d958b14ddeb7b73710982bcfa80}{leer\+\_\+huecos}} ()
+\begin{DoxyCompactList}\small\item\em Inicializa los huecos de la rejilla. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classRejilla_aafe642d35e8a72c7ecb01301c5942f2d}{valida}} ()
+\begin{DoxyCompactList}\small\item\em Inicializa la matriz «mat\+\_\+rej», en caso que la matriz no sea válida, devuelve \char`\"{}\+FALSE\char`\"{}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classRejilla_af7164149ffba3b1db43020888c46a7b1}{escribir\+\_\+huecos}} ()
+\begin{DoxyCompactList}\small\item\em Imprime por pantalla los huecos en sus diferentes posiciones y giros. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classRejilla_a83c9bf77a8b7ce34cbbeaf778ac721b5}{codificar}} (string msg)
+\begin{DoxyCompactList}\small\item\em Imprime por pantalla la codificación del mensage pasado como parámetro. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classRejilla_a63e1fee310b1ebd43f6b6a9d899e786c}{decodificar}} (string dmsg)
+\begin{DoxyCompactList}\small\item\em Decodifica el mensaje pasado como parámetro. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+Representa una rejilla. 
+
+\doxysubsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{classRejilla_a0d4c2d54277ee3862d53d0f673ac8783}\label{classRejilla_a0d4c2d54277ee3862d53d0f673ac8783}} 
+\index{Rejilla@{Rejilla}!Rejilla@{Rejilla}}
+\index{Rejilla@{Rejilla}!Rejilla@{Rejilla}}
+\doxysubsubsection{\texorpdfstring{Rejilla()}{Rejilla()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Rejilla\+::\+Rejilla (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructora por defecto. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape Cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultado es una rejilla sin información 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classRejilla_a1b3fc7a0ac688bc31ff95aa54d1537ba}\label{classRejilla_a1b3fc7a0ac688bc31ff95aa54d1537ba}} 
+\index{Rejilla@{Rejilla}!Rejilla@{Rejilla}}
+\index{Rejilla@{Rejilla}!Rejilla@{Rejilla}}
+\doxysubsubsection{\texorpdfstring{Rejilla()}{Rejilla()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Rejilla\+::\+Rejilla (\begin{DoxyParamCaption}\item[{int}]{n,  }\item[{int}]{npos }\end{DoxyParamCaption})}
+
+
+
+Constructora con identificador asignado. 
+
+\begin{DoxyPrecond}{Precondición}
+«idp» es un entero igual o mayor que 0 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultado es una rejilla con identificador
+\end{DoxyPostcond}
+Constructora con parámetros \begin{DoxyPrecond}{Precondición}
+n,npos \texorpdfstring{$>$}{>} 0 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultado es una rejilla con información 
+\end{DoxyPostcond}
+
+
+\doxysubsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{classRejilla_a83c9bf77a8b7ce34cbbeaf778ac721b5}\label{classRejilla_a83c9bf77a8b7ce34cbbeaf778ac721b5}} 
+\index{Rejilla@{Rejilla}!codificar@{codificar}}
+\index{codificar@{codificar}!Rejilla@{Rejilla}}
+\doxysubsubsection{\texorpdfstring{codificar()}{codificar()}}
+{\footnotesize\ttfamily void Rejilla\+::codificar (\begin{DoxyParamCaption}\item[{string}]{msg }\end{DoxyParamCaption})}
+
+
+
+Imprime por pantalla la codificación del mensage pasado como parámetro. 
+
+\begin{DoxyPrecond}{Precondición}
+«msg» es un string 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Imprime por pantalla la codificación del mensaje pasado como parámetro 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classRejilla_a63e1fee310b1ebd43f6b6a9d899e786c}\label{classRejilla_a63e1fee310b1ebd43f6b6a9d899e786c}} 
+\index{Rejilla@{Rejilla}!decodificar@{decodificar}}
+\index{decodificar@{decodificar}!Rejilla@{Rejilla}}
+\doxysubsubsection{\texorpdfstring{decodificar()}{decodificar()}}
+{\footnotesize\ttfamily void Rejilla\+::decodificar (\begin{DoxyParamCaption}\item[{string}]{dmsg }\end{DoxyParamCaption})}
+
+
+
+Decodifica el mensaje pasado como parámetro. 
+
+\begin{DoxyPrecond}{Precondición}
+«dmsg» es un string 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+«dmsg» se ve editado por la decodificación 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classRejilla_af7164149ffba3b1db43020888c46a7b1}\label{classRejilla_af7164149ffba3b1db43020888c46a7b1}} 
+\index{Rejilla@{Rejilla}!escribir\_huecos@{escribir\_huecos}}
+\index{escribir\_huecos@{escribir\_huecos}!Rejilla@{Rejilla}}
+\doxysubsubsection{\texorpdfstring{escribir\_huecos()}{escribir\_huecos()}}
+{\footnotesize\ttfamily void Rejilla\+::escribir\+\_\+huecos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Imprime por pantalla los huecos en sus diferentes posiciones y giros. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape Cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Imprime por pantalla las posiciones de los huecos en sus 4 formas 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classRejilla_a3c953d958b14ddeb7b73710982bcfa80}\label{classRejilla_a3c953d958b14ddeb7b73710982bcfa80}} 
+\index{Rejilla@{Rejilla}!leer\_huecos@{leer\_huecos}}
+\index{leer\_huecos@{leer\_huecos}!Rejilla@{Rejilla}}
+\doxysubsubsection{\texorpdfstring{leer\_huecos()}{leer\_huecos()}}
+{\footnotesize\ttfamily void Rejilla\+::leer\+\_\+huecos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Inicializa los huecos de la rejilla. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape cert} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Inicializa el valor de «huecos» 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classRejilla_a3d9b89ef4a7adaec47f248f46d338fe9}\label{classRejilla_a3d9b89ef4a7adaec47f248f46d338fe9}} 
+\index{Rejilla@{Rejilla}!ret\_columna@{ret\_columna}}
+\index{ret\_columna@{ret\_columna}!Rejilla@{Rejilla}}
+\doxysubsubsection{\texorpdfstring{ret\_columna()}{ret\_columna()}}
+{\footnotesize\ttfamily int Rejilla\+::ret\+\_\+columna (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption})}
+
+
+
+Devuelve el valor columna del hueco especificado. 
+
+\begin{DoxyPrecond}{Precondición}
+«i» es un entero mayor o igual que 0 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Devuelve el un entero que referencia al segundo valor del \char`\"{}pair\char`\"{} en la posición «i» 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classRejilla_ae3d0bd306bd785d2bee45d798ae49545}\label{classRejilla_ae3d0bd306bd785d2bee45d798ae49545}} 
+\index{Rejilla@{Rejilla}!ret\_dim@{ret\_dim}}
+\index{ret\_dim@{ret\_dim}!Rejilla@{Rejilla}}
+\doxysubsubsection{\texorpdfstring{ret\_dim()}{ret\_dim()}}
+{\footnotesize\ttfamily int Rejilla\+::ret\+\_\+dim (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Devuelve la dimensión de la rejilla. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape Cierto\texorpdfstring{$<$}{<}{\itshape } \texorpdfstring{$>$}{>} }
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+{\itshape  Devuelve el entero «dim» }
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classRejilla_a59ace49babfd7a0a7cb0cea26bd808ab}\label{classRejilla_a59ace49babfd7a0a7cb0cea26bd808ab}} 
+\index{Rejilla@{Rejilla}!ret\_fila@{ret\_fila}}
+\index{ret\_fila@{ret\_fila}!Rejilla@{Rejilla}}
+\doxysubsubsection{\texorpdfstring{ret\_fila()}{ret\_fila()}}
+{\footnotesize\ttfamily int Rejilla\+::ret\+\_\+fila (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption})}
+
+
+
+Devuelve el valor fila del hueco especificado. 
+
+\begin{DoxyPrecond}{Precondición}
+«i» es un entero mayor o igual que 0 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Devuelve el un entero que referencia al primer valor del \char`\"{}pair\char`\"{} en la posición «i» 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classRejilla_a40a2fd1c1a6377d6d35306fb146b066d}\label{classRejilla_a40a2fd1c1a6377d6d35306fb146b066d}} 
+\index{Rejilla@{Rejilla}!ret\_k@{ret\_k}}
+\index{ret\_k@{ret\_k}!Rejilla@{Rejilla}}
+\doxysubsubsection{\texorpdfstring{ret\_k()}{ret\_k()}}
+{\footnotesize\ttfamily int Rejilla\+::ret\+\_\+k (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Devuelve el tamaño de la rejilla. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape Cierto\texorpdfstring{$<$}{<}{\itshape } \texorpdfstring{$>$}{>} }
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+{\itshape  Devuelve el entero «k» }
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classRejilla_aafe642d35e8a72c7ecb01301c5942f2d}\label{classRejilla_aafe642d35e8a72c7ecb01301c5942f2d}} 
+\index{Rejilla@{Rejilla}!valida@{valida}}
+\index{valida@{valida}!Rejilla@{Rejilla}}
+\doxysubsubsection{\texorpdfstring{valida()}{valida()}}
+{\footnotesize\ttfamily bool Rejilla\+::valida (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Inicializa la matriz «mat\+\_\+rej», en caso que la matriz no sea válida, devuelve \char`\"{}\+FALSE\char`\"{}. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape Cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Retorna \texorpdfstring{$<$}{<}cierto/falso\texorpdfstring{$>$}{>} en caso que la rejilla con sus K huecos son válidos o no 
+\end{DoxyPostcond}
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{rejilla_8hh}{rejilla.\+hh}}\item 
+\mbox{\hyperlink{rejilla_8cc}{rejilla.\+cc}}\end{DoxyCompactItemize}
