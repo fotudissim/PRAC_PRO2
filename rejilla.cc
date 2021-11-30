@@ -8,9 +8,11 @@ using namespace std;
 
 //Constructores
 
+/** @brief Implementación: Inicializadora estándar */
 Rejilla::Rejilla() { }
 
 
+/** @brief Implementación: Inicializadora con parámetros */
 Rejilla::Rejilla(int n, int npos) {
 
     dim = n;
@@ -19,23 +21,27 @@ Rejilla::Rejilla(int n, int npos) {
 
 //Consultoras
 
+/** @brief Implementación: función ret_dim */
 int Rejilla::ret_dim() {
 
     return dim;
 }
 
+/** @brief Implementación: función ret_k */
 int Rejilla::ret_k() {
 
     return k;
 
 }
 
+/** @brief Implementación: función ret_fila */
 int Rejilla::ret_fila(int i) {
 
     return huecos[i].first; 
 
 }
 
+/** @brief Implementación: función ret_columna */
 int Rejilla::ret_columna(int i) {
 
     return huecos[i].second; 
@@ -43,6 +49,7 @@ int Rejilla::ret_columna(int i) {
 }
 
 //Leer y escribir
+/** @brief Implementación: función leer_huecos */
 void Rejilla::leer_huecos() {
 
     for (int i = 0; i < k ; i++) {
@@ -55,12 +62,14 @@ void Rejilla::leer_huecos() {
 
 }
 
+/** @brief Implementación: función dim_mat */
 int Rejilla::dim_mat() {
 
   return mat_rej.size();
 
 }
 
+/** @brief Implementación: función valida */
 bool Rejilla::valida() {
 
     vector < vector< pair <int,bool> > > aux = vector < vector< pair <int,bool> > >(dim , vector< pair<int,bool> >(dim, make_pair(0,false)));
@@ -96,6 +105,7 @@ bool Rejilla::valida() {
 
 } //Final de la función «valida()»
 
+/** @brief Implementación: función escribir_huecos */
 void Rejilla::escribir_huecos() {
 
     for (int rot = 1; rot <= 4; rot++) {
@@ -118,6 +128,7 @@ void Rejilla::escribir_huecos() {
 }
 
 
+/** @brief Implementación: función codificar */
 void Rejilla::codificar(string msg) {
 
     /* Se ha de hacer una matriz para cada (long_texto/dim²)
@@ -171,6 +182,7 @@ void Rejilla::codificar(string msg) {
 }
 
 
+/** @brief Implementación: función decodificar */
 void Rejilla::decodificar(string dmsg) {
 
 

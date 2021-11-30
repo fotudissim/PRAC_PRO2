@@ -50,6 +50,8 @@ Representa el conjunto de mensajes.
 
 Constructora de la clase \mbox{\hyperlink{classMensajes}{Mensajes}}. 
 
+Implementación\+: Inicialización estándar.
+
 \begin{DoxyPrecond}{Precondición}
 {\itshape Cierto\texorpdfstring{$<$}{<}{\itshape } \texorpdfstring{$>$}{>} }
 \end{DoxyPrecond}
@@ -69,6 +71,8 @@ Constructora de la clase \mbox{\hyperlink{classMensajes}{Mensajes}}.
 
 Añade un nuevo mensaje con identificador «idm» al conjunto de mensajes. 
 
+Implementación\+: función add\+\_\+msg.
+
 \begin{DoxyPrecond}{Precondición}
 «idm» es un string 
 \end{DoxyPrecond}
@@ -84,6 +88,8 @@ Se añade un nuevo mensaje al contenedor del parámetro implícito
 
 
 Borra un mensaje existente con identificador «idm» del conjunto de mensajes. 
+
+Implementación\+: función borrar\+\_\+msg.
 
 \begin{DoxyPrecond}{Precondición}
 «idm» es un string 
@@ -101,6 +107,8 @@ Se borra un elemento con identificador «idm» del contenedor del parámetro imp
 
 Comprueba si existe un mensaje según su id en el conjunto de mensajes. 
 
+Implementación\+: función existe\+\_\+msg.
+
 \begin{DoxyPrecond}{Precondición}
 «idm» es un string 
 \end{DoxyPrecond}
@@ -116,6 +124,8 @@ Devuelve true/false si se halla el id del mensaje en el parámetro implícito
 
 
 Lee una secuencia de mensajes del parámetro implícito. 
+
+Implementación\+: función leer\+\_\+mensajes.
 
 \begin{DoxyPrecond}{Precondición}
 El entero «m» ha de ser superior a 0 
@@ -133,6 +143,8 @@ El parámetro implícito registra los «m» mensajes
 
 Imprime todos los mensajes en forma de lista en orden alfabético. 
 
+Implementación\+: función listar\+\_\+msg.
+
 \begin{DoxyPrecond}{Precondición}
 {\itshape Cierto\texorpdfstring{$<$}{<}{\itshape } \texorpdfstring{$>$}{>} }
 \end{DoxyPrecond}
@@ -149,6 +161,8 @@ Imprime todos los mensajes en forma de lista en orden alfabético.
 
 Devuelve la cantidad de mensajes que se hallan en el conjunto de mensajes. 
 
+Implementación\+: función num\+\_\+msg.
+
 \begin{DoxyPrecond}{Precondición}
 {\itshape Cierto\texorpdfstring{$<$}{<}{\itshape } \texorpdfstring{$>$}{>} }
 \end{DoxyPrecond}
@@ -164,6 +178,8 @@ Devuelve la cantidad de mensajes que se hallan en el conjunto de mensajes.
 
 
 Devuelve un elemento del contenedor con el respectivo «idm» 
+
+Implementación\+: función ret\+\_\+msg.
 
 \begin{DoxyPrecond}{Precondición}
 «idm» es un string de un elemento existente en el contenedor del p. implícito 

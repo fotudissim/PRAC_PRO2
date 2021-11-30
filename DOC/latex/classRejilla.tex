@@ -18,7 +18,7 @@ Representa una rejilla.
 \begin{DoxyCompactList}\small\item\em Constructora con identificador asignado. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classRejilla_adb9051b1e8343831e7ca2e25c4cefdd5}\label{classRejilla_adb9051b1e8343831e7ca2e25c4cefdd5}} 
 int {\bfseries dim\+\_\+mat} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Implementación\+: función dim\+\_\+mat. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{classRejilla_ae3d0bd306bd785d2bee45d798ae49545}{ret\+\_\+dim}} ()
 \begin{DoxyCompactList}\small\item\em Devuelve la dimensión de la rejilla. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{classRejilla_a40a2fd1c1a6377d6d35306fb146b066d}{ret\+\_\+k}} ()
@@ -68,6 +68,8 @@ Representa una rejilla.
 
 Constructora por defecto. 
 
+Implementación\+: Inicializadora estándar.
+
 \begin{DoxyPrecond}{Precondición}
 {\itshape Cierto} 
 \end{DoxyPrecond}
@@ -83,6 +85,8 @@ El resultado es una rejilla sin información
 
 
 Constructora con identificador asignado. 
+
+Implementación\+: Inicializadora con parámetros.
 
 \begin{DoxyPrecond}{Precondición}
 «idp» es un entero igual o mayor que 0 
@@ -109,6 +113,8 @@ El resultado es una rejilla con información
 
 Imprime por pantalla la codificación del mensage pasado como parámetro. 
 
+Implementación\+: función codificar.
+
 \begin{DoxyPrecond}{Precondición}
 «msg» es un string 
 \end{DoxyPrecond}
@@ -124,6 +130,8 @@ Imprime por pantalla la codificación del mensaje pasado como parámetro
 
 
 Decodifica el mensaje pasado como parámetro. 
+
+Implementación\+: función decodificar.
 
 \begin{DoxyPrecond}{Precondición}
 «dmsg» es un string 
@@ -141,6 +149,8 @@ Decodifica el mensaje pasado como parámetro.
 
 Imprime por pantalla los huecos en sus diferentes posiciones y giros. 
 
+Implementación\+: función escribir\+\_\+huecos.
+
 \begin{DoxyPrecond}{Precondición}
 {\itshape Cierto} 
 \end{DoxyPrecond}
@@ -156,6 +166,8 @@ Imprime por pantalla las posiciones de los huecos en sus 4 formas
 
 
 Inicializa los huecos de la rejilla. 
+
+Implementación\+: función leer\+\_\+huecos.
 
 \begin{DoxyPrecond}{Precondición}
 {\itshape cert} 
@@ -173,6 +185,8 @@ Inicializa el valor de «huecos»
 
 Devuelve el valor columna del hueco especificado. 
 
+Implementación\+: función ret\+\_\+columna.
+
 \begin{DoxyPrecond}{Precondición}
 «i» es un entero mayor o igual que 0 
 \end{DoxyPrecond}
@@ -188,6 +202,8 @@ Devuelve el un entero que referencia al segundo valor del \char`\"{}pair\char`\"
 
 
 Devuelve la dimensión de la rejilla. 
+
+Implementación\+: función ret\+\_\+dim.
 
 \begin{DoxyPrecond}{Precondición}
 {\itshape Cierto\texorpdfstring{$<$}{<}{\itshape } \texorpdfstring{$>$}{>} }
@@ -205,6 +221,8 @@ Devuelve la dimensión de la rejilla.
 
 Devuelve el valor fila del hueco especificado. 
 
+Implementación\+: función ret\+\_\+fila.
+
 \begin{DoxyPrecond}{Precondición}
 «i» es un entero mayor o igual que 0 
 \end{DoxyPrecond}
@@ -221,6 +239,8 @@ Devuelve el un entero que referencia al primer valor del \char`\"{}pair\char`\"{
 
 Devuelve el tamaño de la rejilla. 
 
+Implementación\+: función ret\+\_\+k.
+
 \begin{DoxyPrecond}{Precondición}
 {\itshape Cierto\texorpdfstring{$<$}{<}{\itshape } \texorpdfstring{$>$}{>} }
 \end{DoxyPrecond}
@@ -236,6 +256,8 @@ Devuelve el tamaño de la rejilla.
 
 
 Inicializa la matriz «mat\+\_\+rej», en caso que la matriz no sea válida, devuelve \char`\"{}\+FALSE\char`\"{}. 
+
+Implementación\+: función valida.
 
 \begin{DoxyPrecond}{Precondición}
 {\itshape Cierto} 

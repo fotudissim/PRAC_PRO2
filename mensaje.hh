@@ -38,14 +38,6 @@ class Mensaje {
         */ 
 	Mensaje(string idm, string cont);
 
-	//Destrucoras
-
-	// /** @brief Destructora por defecto. 
-        //     \pre <em>Cierto</em>
-        //     \post El resultado la destrucción del parámetro implícito
-        // */ 
-	// ~Mensaje();
-
 	//Modificadoras
 
 	//Consultoras

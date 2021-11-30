@@ -129,6 +129,7 @@ map&lt; string, <a class="el" href="classMensaje.html">Mensaje</a> &gt;&#160;</t
 </div><div class="memdoc">
 
 <p>Constructora de la clase <a class="el" href="classMensajes.html" title="Representa el conjunto de mensajes.">Mensajes</a>. </p>
+<p >Implementación: Inicialización estándar.</p>
 <dl class="section pre"><dt>Precondición</dt><dd><em>Cierto&lt;<em></em> &gt; </em></dd></dl>
 <dl class="section post"><dt>Postcondición</dt><dd><em> El resultado es un conjunto de mensajes no inicializado </em></dd></dl>
 
@@ -152,6 +153,7 @@ map&lt; string, <a class="el" href="classMensaje.html">Mensaje</a> &gt;&#160;</t
 </div><div class="memdoc">
 
 <p>Añade un nuevo mensaje con identificador «idm» al conjunto de mensajes. </p>
+<p >Implementación: función add_msg.</p>
 <dl class="section pre"><dt>Precondición</dt><dd>«idm» es un string </dd></dl>
 <dl class="section post"><dt>Postcondición</dt><dd>Se añade un nuevo mensaje al contenedor del parámetro implícito </dd></dl>
 
@@ -174,6 +176,7 @@ map&lt; string, <a class="el" href="classMensaje.html">Mensaje</a> &gt;&#160;</t
 </div><div class="memdoc">
 
 <p>Borra un mensaje existente con identificador «idm» del conjunto de mensajes. </p>
+<p >Implementación: función borrar_msg.</p>
 <dl class="section pre"><dt>Precondición</dt><dd>«idm» es un string </dd></dl>
 <dl class="section post"><dt>Postcondición</dt><dd>Se borra un elemento con identificador «idm» del contenedor del parámetro implícito </dd></dl>
 
@@ -196,6 +199,7 @@ map&lt; string, <a class="el" href="classMensaje.html">Mensaje</a> &gt;&#160;</t
 </div><div class="memdoc">
 
 <p>Comprueba si existe un mensaje según su id en el conjunto de mensajes. </p>
+<p >Implementación: función existe_msg.</p>
 <dl class="section pre"><dt>Precondición</dt><dd>«idm» es un string </dd></dl>
 <dl class="section post"><dt>Postcondición</dt><dd>Devuelve true/false si se halla el id del mensaje en el parámetro implícito </dd></dl>
 
@@ -218,6 +222,7 @@ map&lt; string, <a class="el" href="classMensaje.html">Mensaje</a> &gt;&#160;</t
 </div><div class="memdoc">
 
 <p>Lee una secuencia de mensajes del parámetro implícito. </p>
+<p >Implementación: función leer_mensajes.</p>
 <dl class="section pre"><dt>Precondición</dt><dd>El entero «m» ha de ser superior a 0 </dd></dl>
 <dl class="section post"><dt>Postcondición</dt><dd>El parámetro implícito registra los «m» mensajes </dd></dl>
 
@@ -239,6 +244,7 @@ map&lt; string, <a class="el" href="classMensaje.html">Mensaje</a> &gt;&#160;</t
 </div><div class="memdoc">
 
 <p>Imprime todos los mensajes en forma de lista en orden alfabético. </p>
+<p >Implementación: función listar_msg.</p>
 <dl class="section pre"><dt>Precondición</dt><dd><em>Cierto&lt;<em></em> &gt; </em></dd></dl>
 <dl class="section post"><dt>Postcondición</dt><dd><em> Se imprimen los mensajes en orden alfabético </em></dd></dl>
 
@@ -260,6 +266,7 @@ map&lt; string, <a class="el" href="classMensaje.html">Mensaje</a> &gt;&#160;</t
 </div><div class="memdoc">
 
 <p>Devuelve la cantidad de mensajes que se hallan en el conjunto de mensajes. </p>
+<p >Implementación: función num_msg.</p>
 <dl class="section pre"><dt>Precondición</dt><dd><em>Cierto&lt;<em></em> &gt; </em></dd></dl>
 <dl class="section post"><dt>Postcondición</dt><dd><em> Retorna la cantidad de elementos del contenedor del parámetro implícito </em></dd></dl>
 
@@ -282,6 +289,7 @@ map&lt; string, <a class="el" href="classMensaje.html">Mensaje</a> &gt;&#160;</t
 </div><div class="memdoc">
 
 <p>Devuelve un elemento del contenedor con el respectivo «idm» </p>
+<p >Implementación: función ret_msg.</p>
 <dl class="section pre"><dt>Precondición</dt><dd>«idm» es un string de un elemento existente en el contenedor del p. implícito </dd></dl>
 <dl class="section post"><dt>Postcondición</dt><dd>Retorna un elemento del contenedor con identificador «idm» </dd></dl>
 

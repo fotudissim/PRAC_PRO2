@@ -86,6 +86,11 @@ class Mensajes {
 	/**@brief Contenedor de mensajes */
 	map<string,Mensaje> cjt_mensajes;
 
+	///** @brief Función para comparar dos mensajes
+	//    \pre Mensaje a,b son dos mensajes inicializados
+	//    \post Devuelve true en caso que el identificador de a sea menor que el de b
+	//*/
+        //bool cmp ( Mensaje a, Mensaje b );
 };
 
 #endif  

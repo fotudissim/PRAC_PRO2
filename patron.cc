@@ -15,6 +15,7 @@ Patron::~Patron() { }
 //Modificadoras
 
 //Función inmersiva usada en escribir_patron, como no se usa fuera de la implementación de la clase, no la especificamos en los headers
+/** @brief Implementación: función init_ptr_im */
 void Patron::init_ptr_im(BinTree<int>& pb) {
 
     int val;
@@ -33,6 +34,7 @@ void Patron::init_ptr_im(BinTree<int>& pb) {
 
 }
 
+/** @brief Implementación: función inicializar_ptr */
 void Patron::inicializar_ptr() {
 
     init_ptr_im(ctr_ptr);
@@ -41,6 +43,7 @@ void Patron::inicializar_ptr() {
 
 //Lectura y escritura
 //Función inmersiva usada en escribir_patron, como no se usa fuera de la implementación de la clase, no la especificamos en los headers
+/** @brief Implementación: función out_im_patron */
 void Patron::out_im_patron(const BinTree<int>& ptr) {
 
     cout << "(";
@@ -53,6 +56,7 @@ void Patron::out_im_patron(const BinTree<int>& ptr) {
 
 }
 
+/** @brief Implementación: función escribir_patron */
 void Patron::escribir_patron() {
 
     BinTree<int> aux = ctr_ptr;
@@ -67,6 +71,7 @@ void Patron::escribir_patron() {
    podriamos trabajar con vectores en vez de árboles binarios interpretandolos como heaps binarios.
 */
 //Crida inicial: arrel = msg_arbol(missatge,1)
+/** @brief Implementación: función msg_arbol */
 BinTree<char> Patron::msg_arbol(const string& msg, int i) {
 
   BinTree<char> izq = BinTree<char>();
@@ -82,6 +87,7 @@ BinTree<char> Patron::msg_arbol(const string& msg, int i) {
 }
 
 //Crida inicial: nodo_arbol,raiz_patron,offsets,1
+/** @brief Implementación: función pintaPatron */
 void Patron::pintaPatron(const BinTree<char>& arb, const BinTree<int>& ptr,vector<int>& offsets,int ind) {
 
 
@@ -92,6 +98,7 @@ void Patron::pintaPatron(const BinTree<char>& arb, const BinTree<int>& ptr,vecto
 }
 
 //Crida inicial: raiz_arbol,offsets,1
+/** @brief Implementación: función recorreArb */
 void Patron::recorreArb(const BinTree<char>& arb,vector<int>& offsets,int ind) {
 
     BinTree<int> ptr = ctr_ptr;
@@ -101,6 +108,7 @@ void Patron::recorreArb(const BinTree<char>& arb,vector<int>& offsets,int ind) {
 
 }
 
+/** @brief Implementación: función codificar_msg */
 void Patron::codificar_msg(int b,const string& msg) {
 
 
@@ -139,6 +147,7 @@ void Patron::codificar_msg(int b,const string& msg) {
 
 }
 
+/** @brief Implementación: función decod */
 void Patron::decod(int b,const string& msg) {
 
     int sizemsg = msg.size();

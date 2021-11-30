@@ -52,6 +52,8 @@ Representa el conjunto de rejillas.
 
 Constructora de la clase \mbox{\hyperlink{classRejillas}{Rejillas}}. 
 
+Implementación\+: Inicializadora estándar.
+
 \begin{DoxyPrecond}{Precondición}
 {\itshape Cierto\texorpdfstring{$<$}{<}{\itshape } \texorpdfstring{$>$}{>} }
 \end{DoxyPrecond}
@@ -71,6 +73,8 @@ Constructora de la clase \mbox{\hyperlink{classRejillas}{Rejillas}}.
 
 Comprueba que una rejilla es válida y la añade al conjunto de rejillas. 
 
+Implementación\+: función add\+\_\+rejilla.
+
 \begin{DoxyPrecond}{Precondición}
 0 \texorpdfstring{$<$}{<} n,k 
 \end{DoxyPrecond}
@@ -86,6 +90,8 @@ Retorna 0 si se ha podido añadir con exito la rejilla o 1/2 si ha habido un err
 
 
 Codifica un mensaje (no existente) mediante el uso de una rejilla «idr» 
+
+Implementación\+: función codificar\+\_\+rejilla.
 
 \begin{DoxyPrecond}{Precondición}
 «idr» es una rejilla existente (siendo este un entero) 
@@ -103,6 +109,8 @@ Se imprime el mensaje codificado
 
 Codifica un mensaje existente mediante el uso de una rejilla «idr» 
 
+Implementación\+: función codificar\+\_\+rejilla\+\_\+msg.
+
 \begin{DoxyPrecond}{Precondición}
 «idr» es el id de una rejilla existente, y msg un string no inicializado («idr» es un entero) 
 \end{DoxyPrecond}
@@ -118,6 +126,8 @@ Se imprime el mensaje codificado
 
 
 Decodifica un mensaje no existente mediante el uso de una rejilla «idr» 
+
+Implementación\+: función decod\+\_\+rj.
 
 \begin{DoxyPrecond}{Precondición}
 «idr» es una rejilla existente (de tipo entero), y «dmsg» es un string no inicializado 
@@ -135,6 +145,8 @@ Devuelve «1» si ha ocurrido algún error, en caso contrario, escribe el conten
 
 Devuelve true/false en función de la existencia de una rejilla «idr» 
 
+Implementación\+: función existe\+\_\+rejilla.
+
 \begin{DoxyPrecond}{Precondición}
 «idr» es un string 
 \end{DoxyPrecond}
@@ -150,6 +162,8 @@ Retorna \char`\"{}true\char`\"{} si existe una rejilla con identificador «idr»
 
 
 Lee una secuencia de mensajes del parámetro implícito. 
+
+Implementación\+: función leer\+\_\+rejillas.
 
 \begin{DoxyPrecond}{Precondición}
 El entero «r» ha de ser superior a 0 
@@ -167,6 +181,8 @@ El parámetro implícito registra los «r» rejillas
 
 Escribe una lista de las rejillas existentes en orden creciente por identificador. 
 
+Implementación\+: función listar\+\_\+rejillas.
+
 \begin{DoxyPrecond}{Precondición}
 {\itshape Cierto} 
 \end{DoxyPrecond}
@@ -182,6 +198,8 @@ Se imprime un listado de los elementos del contenedor del p.\+impl. ordenador po
 
 
 Devuelve el tamaño del conjunto de rejillas. 
+
+Implementación\+: función num\+\_\+rejillas.
 
 \begin{DoxyPrecond}{Precondición}
 {\itshape Cierto\texorpdfstring{$<$}{<}{\itshape } \texorpdfstring{$>$}{>} }

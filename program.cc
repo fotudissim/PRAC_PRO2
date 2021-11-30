@@ -13,6 +13,7 @@
 
 using namespace std;
 
+/** @brief Implementación: PPrograma principal */
 int main() {
 
 //Primero declaramos los diferentes conjuntos iniciales

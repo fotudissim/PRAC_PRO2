@@ -8,10 +8,12 @@ using namespace std;
 
 //Constructores
 
+/** @brief Implementación: Inicializadora estándar */
 Rejillas::Rejillas() { }
 
 //Modificadores
 
+/** @brief Implementación: función add_rejilla */
 int Rejillas::add_rejilla(int n, int k) {
 
     //Inicializamos una rejilla auxiliar
@@ -32,6 +34,7 @@ int Rejillas::add_rejilla(int n, int k) {
     return 0;
 } //Final de la función ADD_REJILLA
 
+/** @brief Implementación: función num_rejillas */
 int Rejillas::num_rejillas() {
 
     return cjt_rejillas.size();
@@ -39,6 +42,7 @@ int Rejillas::num_rejillas() {
 }
 
 
+/** @brief Implementación: función existe_rejilla */
 bool Rejillas::existe_rejilla(int idr) {
 
     int n = cjt_rejillas.size();
@@ -48,6 +52,7 @@ bool Rejillas::existe_rejilla(int idr) {
 }
 
 
+/** @brief Implementación: función leer_rejillas */
 void Rejillas::leer_rejillas(int r) {
 
     for (int i = 0; i < r; i++) {
@@ -60,6 +65,7 @@ void Rejillas::leer_rejillas(int r) {
     }
 } //Final de leer rejillas
 
+/** @brief Implementación: función listar_rejillas */
 void Rejillas::listar_rejillas() {
 
   for ( int i = 0; i < cjt_rejillas.size(); i++ ) {
@@ -74,6 +80,7 @@ void Rejillas::listar_rejillas() {
 
 }
 
+/** @brief Implementación: función codificar_rejilla */
 void Rejillas::codificar_rejilla(int idr) {
 
     string salto,msg;
@@ -84,13 +91,14 @@ void Rejillas::codificar_rejilla(int idr) {
 
 }
 
-
+/** @brief Implementación: función codificar_rejilla_msg */
 void Rejillas::codificar_rejilla_msg(int idr,const string& msg) {
 
     cjt_rejillas[idr - 1].codificar(msg);
 
 }
 
+/** @brief Implementación: función decod_rj */
 int Rejillas::decod_rj(int idr, string& dmsg) {
 
     int dim = cjt_rejillas[idr - 1].ret_dim();

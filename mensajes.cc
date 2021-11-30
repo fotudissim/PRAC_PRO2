@@ -7,10 +7,13 @@
 using namespace std;
 
 //Constructora
+
+/**@brief Implementación: Inicialización estándar */
 Mensajes::Mensajes() { }
 
 //Modificadoras
 
+/**@brief Implementación: función add_msg */
 void Mensajes::add_msg(string idm) {
 
     string salto,cont;
@@ -23,6 +26,7 @@ void Mensajes::add_msg(string idm) {
 
 }
 
+/**@brief Implementación: función borrar_msg */
 void Mensajes::borrar_msg(string idm) {
 
   cjt_mensajes.erase( cjt_mensajes.find(idm) );
@@ -32,6 +36,7 @@ void Mensajes::borrar_msg(string idm) {
 //Consultoras
 
 
+/**@brief Implementación: función ret_msg */
 Mensaje Mensajes::ret_msg(string idm) {
 
 
@@ -41,6 +46,7 @@ Mensaje Mensajes::ret_msg(string idm) {
 
 }
 
+/**@brief Implementación: función existe_msg */
 bool Mensajes::existe_msg(string idm) {
 
     if ( cjt_mensajes.find(idm) == cjt_mensajes.end() ) return false;
@@ -49,6 +55,7 @@ bool Mensajes::existe_msg(string idm) {
 }
 
 
+/**@brief Implementación: función num_msg */
 int Mensajes::num_msg() {
 
     return cjt_mensajes.size();
@@ -61,13 +68,16 @@ int Mensajes::num_msg() {
 
     Al ser una función que solo se accederá en esta clase y no fuera de ella.
 */
-    bool cmp ( Mensaje a, Mensaje b ) {
+
+/**@brief Implementación: función cmp */
+bool cmp ( Mensaje a, Mensaje b ) {
+//bool Mensajes::cmp ( Mensaje a, Mensaje b ) {
 
     return ( a.ret_idm() < b.ret_idm() );
 
 }
 
-
+/**@brief Implementación: función leer_mensajes */
 void Mensajes::leer_mensajes(int m) {
 
 
@@ -88,6 +98,7 @@ void Mensajes::leer_mensajes(int m) {
 }
 
 
+/**@brief Implementación: función listar_msg */
 void Mensajes::listar_msg() {
 
     //Declaramos un vector auxiliar con el cual podremos ordenarlo e imprimirlo en pantalla

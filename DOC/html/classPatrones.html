@@ -132,6 +132,7 @@ vector&lt; <a class="el" href="classPatron.html">Patron</a> &gt;&#160;</td><td c
 </div><div class="memdoc">
 
 <p>Constructora de la clase <a class="el" href="classPatrones.html" title="Representa el conjunto de patrones.">Patrones</a>. </p>
+<p >Implementación: Inicializadora estándar.</p>
 <dl class="section pre"><dt>Precondición</dt><dd><em>Cierto&lt;<em></em> &gt; </em></dd></dl>
 <dl class="section post"><dt>Postcondición</dt><dd><em> El resultado es un conjunto de patrones no inicializado </em></dd></dl>
 
@@ -154,6 +155,7 @@ vector&lt; <a class="el" href="classPatron.html">Patron</a> &gt;&#160;</td><td c
 </div><div class="memdoc">
 
 <p>Añade un patrón al conjunto de patrones. </p>
+<p >Implementación: función add_patron.</p>
 <dl class="section pre"><dt>Precondición</dt><dd><em>Cierto&lt;<em></em> &gt; </em></dd></dl>
 <dl class="section post"><dt>Postcondición</dt><dd><em> Añade un elemento al contenedor del parámetro implícito </em></dd></dl>
 
@@ -186,6 +188,7 @@ vector&lt; <a class="el" href="classPatron.html">Patron</a> &gt;&#160;</td><td c
 </div><div class="memdoc">
 
 <p>Codifica un mensaje (no existente) mediante el uso de un patrón «idp» </p>
+<p >Implementación: función codificar_patron.</p>
 <dl class="section pre"><dt>Precondición</dt><dd>«idp» es un patrón existente (siendo este un entero) </dd></dl>
 <dl class="section post"><dt>Postcondición</dt><dd>Se imprime el mensaje codificado </dd></dl>
 
@@ -224,6 +227,7 @@ vector&lt; <a class="el" href="classPatron.html">Patron</a> &gt;&#160;</td><td c
 </div><div class="memdoc">
 
 <p>Codifica un mensaje existente mediante el uso de un patrón «idp» </p>
+<p >Implementación: función codificar_patron_msg.</p>
 <dl class="section pre"><dt>Precondición</dt><dd>«idp» es el id de un patrón existente (entero), «b» es un entero mayor que 0, «msg» es un string sin inicializar </dd></dl>
 <dl class="section post"><dt>Postcondición</dt><dd>Se imprime el mensaje codificado </dd></dl>
 
@@ -256,6 +260,7 @@ vector&lt; <a class="el" href="classPatron.html">Patron</a> &gt;&#160;</td><td c
 </div><div class="memdoc">
 
 <p>Decodifica un mensaje no existente mediante el uso de un patrón «idp» </p>
+<p >Implementación: función decod_patron.</p>
 <dl class="section pre"><dt>Precondición</dt><dd>«idp» es un patrón existente (de tipo entero) y «b» un entero mayor que 0 </dd></dl>
 <dl class="section post"><dt>Postcondición</dt><dd>Eescribe el contenido del mensaje decodificado </dd></dl>
 
@@ -278,6 +283,7 @@ vector&lt; <a class="el" href="classPatron.html">Patron</a> &gt;&#160;</td><td c
 </div><div class="memdoc">
 
 <p>Devuelve true/false en función de si existe o no un elemento con identificador «idr» </p>
+<p >Implementación: función existe_patron.</p>
 <dl class="section pre"><dt>Precondición</dt><dd>«idr» es un entero: idr &gt;= 0 </dd></dl>
 <dl class="section post"><dt>Postcondición</dt><dd>Devuelve true en caso de hallar el elemento en el contenedor, en caso contrario, devuelve false </dd></dl>
 
@@ -300,6 +306,7 @@ vector&lt; <a class="el" href="classPatron.html">Patron</a> &gt;&#160;</td><td c
 </div><div class="memdoc">
 
 <p>Lee una secuencia de mensajes del parámetro implícito. </p>
+<p >Implementación: función leer_patrones.</p>
 <dl class="section pre"><dt>Precondición</dt><dd>El entero «p» ha de ser superior a 0 </dd></dl>
 <dl class="section post"><dt>Postcondición</dt><dd>El parámetro implícito registra los «p» patrones </dd></dl>
 
@@ -321,6 +328,7 @@ vector&lt; <a class="el" href="classPatron.html">Patron</a> &gt;&#160;</td><td c
 </div><div class="memdoc">
 
 <p>Escribe en forma de lista los patrones en orden creciente de su identificador. </p>
+<p >Implementación: función listar_patrones.</p>
 <dl class="section pre"><dt>Precondición</dt><dd><em>Cierto&lt;<em></em> &gt; </em></dd></dl>
 <dl class="section post"><dt>Postcondición</dt><dd><em> Imprime en orden creciente respecto al identificador de cada elemento del contenedor del p.i. </em></dd></dl>
 
@@ -342,6 +350,7 @@ vector&lt; <a class="el" href="classPatron.html">Patron</a> &gt;&#160;</td><td c
 </div><div class="memdoc">
 
 <p>Devuelve la cantidad de patrones que existen en el conjunto de patrones. </p>
+<p >Implementación: función num_ptr.</p>
 <dl class="section pre"><dt>Precondición</dt><dd><em>Cierto&lt;<em></em> &gt; </em></dd></dl>
 <dl class="section post"><dt>Postcondición</dt><dd><em> Devuelve cuantos elementos se hallan en el contenedor del parámetro implícito </em></dd></dl>
 

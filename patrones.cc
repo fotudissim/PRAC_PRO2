@@ -7,10 +7,12 @@
 using namespace std;
 
 //Constructora
+/** @brief Implementación: Inicializadora estándar */
 Patrones::Patrones() { }
 
 //Modificadoras
 
+/** @brief Implementación: función add_patron */
 void Patrones::add_patron() {
 
     Patron ptr;
@@ -20,6 +22,8 @@ void Patrones::add_patron() {
 }
 
 //Consultoras
+
+/** @brief Implementación: función existe_patron */
 bool Patrones::existe_patron(int idp) {
 
   int n = cjt_patrones.size();
@@ -29,6 +33,7 @@ bool Patrones::existe_patron(int idp) {
 }
 
 
+/** @brief Implementación: función num_ptr */
 int Patrones::num_ptr() {
 
   return cjt_patrones.size();
@@ -38,6 +43,7 @@ int Patrones::num_ptr() {
 //Lectura y escritura
 
 
+/** @brief Implementación: función leer_patrones */
 void Patrones::leer_patrones(int p) {
 
     for (int i = 0; i < p; i++) {
@@ -48,6 +54,7 @@ void Patrones::leer_patrones(int p) {
 
 }
 
+/** @brief Implementación: función listar_patrones */
 void Patrones::listar_patrones() {
 
     for(int i = 0; i < cjt_patrones.size(); i++) {
@@ -59,6 +66,7 @@ void Patrones::listar_patrones() {
 
 }
 
+/** @brief Implementación: función codificar_patron */
 void Patrones::codificar_patron(int idp, int b) {
 
     string salt,msg;
@@ -70,6 +78,7 @@ void Patrones::codificar_patron(int idp, int b) {
 
 }
 
+/** @brief Implementación: función codificar_patron_msg */
 void Patrones::codificar_patron_msg(int idp, int b, const string& msg) {
 
     cjt_patrones[idp - 1].codificar_msg(b,msg);
@@ -77,6 +86,7 @@ void Patrones::codificar_patron_msg(int idp, int b, const string& msg) {
 
 }
 
+/** @brief Implementación: función decod_patron */
 void Patrones::decod_patron(int idp, int b) {
 
     string salt,msg;

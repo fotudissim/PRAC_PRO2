@@ -132,6 +132,7 @@ vector&lt; <a class="el" href="classRejilla.html">Rejilla</a> &gt;&#160;</td><td
 </div><div class="memdoc">
 
 <p>Constructora de la clase <a class="el" href="classRejillas.html" title="Representa el conjunto de rejillas.">Rejillas</a>. </p>
+<p >Implementación: Inicializadora estándar.</p>
 <dl class="section pre"><dt>Precondición</dt><dd><em>Cierto&lt;<em></em> &gt; </em></dd></dl>
 <dl class="section post"><dt>Postcondición</dt><dd><em> El resultado es un conjunto de rejillas no inicializado </em></dd></dl>
 
@@ -165,6 +166,7 @@ vector&lt; <a class="el" href="classRejilla.html">Rejilla</a> &gt;&#160;</td><td
 </div><div class="memdoc">
 
 <p>Comprueba que una rejilla es válida y la añade al conjunto de rejillas. </p>
+<p >Implementación: función add_rejilla.</p>
 <dl class="section pre"><dt>Precondición</dt><dd>0 &lt; n,k </dd></dl>
 <dl class="section post"><dt>Postcondición</dt><dd>Retorna 0 si se ha podido añadir con exito la rejilla o 1/2 si ha habido un error </dd></dl>
 
@@ -187,6 +189,7 @@ vector&lt; <a class="el" href="classRejilla.html">Rejilla</a> &gt;&#160;</td><td
 </div><div class="memdoc">
 
 <p>Codifica un mensaje (no existente) mediante el uso de una rejilla «idr» </p>
+<p >Implementación: función codificar_rejilla.</p>
 <dl class="section pre"><dt>Precondición</dt><dd>«idr» es una rejilla existente (siendo este un entero) </dd></dl>
 <dl class="section post"><dt>Postcondición</dt><dd>Se imprime el mensaje codificado </dd></dl>
 
@@ -219,6 +222,7 @@ vector&lt; <a class="el" href="classRejilla.html">Rejilla</a> &gt;&#160;</td><td
 </div><div class="memdoc">
 
 <p>Codifica un mensaje existente mediante el uso de una rejilla «idr» </p>
+<p >Implementación: función codificar_rejilla_msg.</p>
 <dl class="section pre"><dt>Precondición</dt><dd>«idr» es el id de una rejilla existente, y msg un string no inicializado («idr» es un entero) </dd></dl>
 <dl class="section post"><dt>Postcondición</dt><dd>Se imprime el mensaje codificado </dd></dl>
 
@@ -251,6 +255,7 @@ vector&lt; <a class="el" href="classRejilla.html">Rejilla</a> &gt;&#160;</td><td
 </div><div class="memdoc">
 
 <p>Decodifica un mensaje no existente mediante el uso de una rejilla «idr» </p>
+<p >Implementación: función decod_rj.</p>
 <dl class="section pre"><dt>Precondición</dt><dd>«idr» es una rejilla existente (de tipo entero), y «dmsg» es un string no inicializado </dd></dl>
 <dl class="section post"><dt>Postcondición</dt><dd>Devuelve «1» si ha ocurrido algún error, en caso contrario, escribe el contenido del mensaje decodificado en «dmsg» </dd></dl>
 
@@ -273,6 +278,7 @@ vector&lt; <a class="el" href="classRejilla.html">Rejilla</a> &gt;&#160;</td><td
 </div><div class="memdoc">
 
 <p>Devuelve true/false en función de la existencia de una rejilla «idr» </p>
+<p >Implementación: función existe_rejilla.</p>
 <dl class="section pre"><dt>Precondición</dt><dd>«idr» es un string </dd></dl>
 <dl class="section post"><dt>Postcondición</dt><dd>Retorna "true" si existe una rejilla con identificador «idr» en el parámetro implícito </dd></dl>
 
@@ -295,6 +301,7 @@ vector&lt; <a class="el" href="classRejilla.html">Rejilla</a> &gt;&#160;</td><td
 </div><div class="memdoc">
 
 <p>Lee una secuencia de mensajes del parámetro implícito. </p>
+<p >Implementación: función leer_rejillas.</p>
 <dl class="section pre"><dt>Precondición</dt><dd>El entero «r» ha de ser superior a 0 </dd></dl>
 <dl class="section post"><dt>Postcondición</dt><dd>El parámetro implícito registra los «r» rejillas </dd></dl>
 
@@ -316,6 +323,7 @@ vector&lt; <a class="el" href="classRejilla.html">Rejilla</a> &gt;&#160;</td><td
 </div><div class="memdoc">
 
 <p>Escribe una lista de las rejillas existentes en orden creciente por identificador. </p>
+<p >Implementación: función listar_rejillas.</p>
 <dl class="section pre"><dt>Precondición</dt><dd><em>Cierto</em> </dd></dl>
 <dl class="section post"><dt>Postcondición</dt><dd>Se imprime un listado de los elementos del contenedor del p.impl. ordenador por identificador </dd></dl>
 
@@ -337,6 +345,7 @@ vector&lt; <a class="el" href="classRejilla.html">Rejilla</a> &gt;&#160;</td><td
 </div><div class="memdoc">
 
 <p>Devuelve el tamaño del conjunto de rejillas. </p>
+<p >Implementación: función num_rejillas.</p>
 <dl class="section pre"><dt>Precondición</dt><dd><em>Cierto&lt;<em></em> &gt; </em></dd></dl>
 <dl class="section post"><dt>Postcondición</dt><dd><em> Retorna la cantidad de elementos del contenedor del parámetro implícito </em></dd></dl>
 

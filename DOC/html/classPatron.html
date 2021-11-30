@@ -197,6 +197,7 @@ Atributos privados</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Escribe la codificación de un mensaje. </p>
+<p >Implementación: función codificar_msg.</p>
 <dl class="section pre"><dt>Precondición</dt><dd>«b» es un entero mayor que 0 y msg es un string </dd></dl>
 <dl class="section post"><dt>Postcondición</dt><dd>El resultado es la impresión en pantalla de la codificación </dd></dl>
 
@@ -229,6 +230,7 @@ Atributos privados</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Escribe la decodificación de un mensaje. </p>
+<p >Implementación: función decod.</p>
 <dl class="section pre"><dt>Precondición</dt><dd>«b» es un entero mayor que 0, «msg» es un string </dd></dl>
 <dl class="section post"><dt>Postcondición</dt><dd>El resultado es la impresión en pantalla de la decodificación </dd></dl>
 
@@ -250,6 +252,7 @@ Atributos privados</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Escribe el patrón con paréntesis. </p>
+<p >Implementación: función escribir_patron.</p>
 <dl class="section pre"><dt>Precondición</dt><dd><em>Cierto</em> </dd></dl>
 <dl class="section post"><dt>Postcondición</dt><dd>El resultado es la impresión en pantalla de los patrones </dd></dl>
 
@@ -271,6 +274,7 @@ Atributos privados</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Inicializa un patrón. </p>
+<p >Implementación: función inicializar_ptr.</p>
 <dl class="section pre"><dt>Precondición</dt><dd><em>Cierto</em> </dd></dl>
 <dl class="section post"><dt>Postcondición</dt><dd>El resultado es la inicialización del arbol binario de enteros «ctr_ptr» </dd></dl>
 
@@ -301,6 +305,7 @@ Atributos privados</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Función inmersiva para iniciaizar el árbol binario de enteros «pb» </p>
+<p >Implementación: función init_ptr_im.</p>
 <dl class="section pre"><dt>Precondición</dt><dd>«ptr» es un arbol binario de enteros vacío </dd></dl>
 <dl class="section post"><dt>Postcondición</dt><dd>El resultado es la incialización del árbol binario «pb» </dd></dl>
 
@@ -341,6 +346,7 @@ Atributos privados</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Función usada para pasar de string a arbol binario. </p>
+<p >Implementación: función msg_arbol.</p>
 <dl class="section pre"><dt>Precondición</dt><dd>«msg» es un string y i == 1 </dd></dl>
 <dl class="section post"><dt>Postcondición</dt><dd>La función devuelve un árbol binario de caracteres </dd></dl>
 
@@ -371,6 +377,7 @@ Atributos privados</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Escribe el patrón de forma recursiva. </p>
+<p >Implementación: función out_im_patron.</p>
 <dl class="section pre"><dt>Precondición</dt><dd>«ptr» es un arbol binario de enteros inicializado </dd></dl>
 <dl class="section post"><dt>Postcondición</dt><dd>El resultado es la impresión del valor del nodo del arbol </dd></dl>
 
@@ -423,6 +430,7 @@ Atributos privados</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Inicializa el vector&lt;int&gt; offsets. </p>
+<p >Implementación: función pintaPatron.</p>
 <dl class="section pre"><dt>Precondición</dt><dd>«arb» es un arbol binario de chars inicializado, ptr es un arbol binario de enteros inicializado, ind es un entero == 1 </dd></dl>
 <dl class="section post"><dt>Postcondición</dt><dd>El resultado es la inicializacion de «offsets» </dd></dl>
 
@@ -469,6 +477,7 @@ Atributos privados</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Función que llama a &lt;pintaPatron&gt; y recorre de forma recursiva el arbol arb. </p>
+<p >Implementación: función recorreArb.</p>
 <dl class="section pre"><dt>Precondición</dt><dd>«arb» es un arbol binario de chars inicializado, ptr es un arbol binario de enteros inicializado, ind es un entero &gt;= 1 </dd></dl>
 <dl class="section post"><dt>Postcondición</dt><dd>El resultado es la inicializacion de «offsets» mediante el uso de &lt;pintaPatron&gt; </dd></dl>
 
