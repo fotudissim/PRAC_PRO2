@@ -159,7 +159,7 @@ int main() {
 	    else {
 
 		if ( rjs0.decod_rj(idr,dmsg) == 1 ) cout << "error: la dimension del mensaje es inadecuada para la rejilla" << endl;
-		else cout << "\"" << dmsg << "\"" << endl; 
+		//else cout << "\"" << dmsg << "\"" << endl; 
 
 	    }
 	    

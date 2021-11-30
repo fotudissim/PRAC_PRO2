@@ -161,19 +161,19 @@ error: la rejilla no existe
 #cgr Hotel_California_5 1
 "u Slcpeod a I tl"ahipPne, tlC ea bagrm smeiy e ni"we.d isn ,ea Hhh"naa'Wtevd   eh trseihtaprt eiec ieensei nnt n ysn Aei"xnnt.di l hlvosst oieitiaccrnaelseg l  y f f,arwoa mawrnyauo pk eut ih tde dho fmlei  ettnu,ositg  h hj.te h.saare. y m"
 #decodificar_rejilla 4
-"Whnd oe mynf i n I t sfieitromlfubesWhen I find myself in times of troub"
+"When I find myself in times of trouble, Mother Mary comes to me         "
 #decodificar_rejilla 2
-"a H ogol l,?a  q  u,    a  em     ti"
+"Hola, amigo, que tal?               "
 #dr 6
 error: la rejilla no existe
 #dr 3
 error: la dimension del mensaje es inadecuada para la rejilla
 #dr 3
-"dCouuae  adnrcmoCuando duerma co"
+"Cuando duerma con la soledad.   "
 #dr 1
-"lnFiaata   rucanFa una nit clara"
+"Fa una nit clara i tranquila,   "
 #dr 1
-"u Slcpeod a I tlSo I called up t bagrm smeiy e nase bring me my hh"naa'Wtevd   e"We haven't had ec ieensei nnt n since nineteen  l hlvosst oieit still those voiy f f,arwoa mawrfrom far away, wtde dho fmlei  ee middle of the .te h.saare. y m"
+"So I called up the Captain, "Please bring me my wine". He said, "We haven't had that spirit here since nineteen sixty nine". And still those voices are calling from far away, wake you up in the middle of the night, just to hear them say... "
 #codificar_patron 2 15
 "@,_cdro%R4A2_fRd'Oqhn~rA-S!_5N`?M`m}`.AK_4R!S~5N~rtd.^/_)N4R`.QthknK_3E?E.Cn.Tqn&~%N?S5_#Al!_bnmu%R4I$O?Em?Um~ln.S4R5O3O~)Nrdbs/m"
 #cp 0 15

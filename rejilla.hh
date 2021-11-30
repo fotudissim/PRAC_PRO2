@@ -126,7 +126,7 @@ class Rejilla {
 	    \pre «dmsg» es un string
 	    \post «dmsg» se ve editado por la decodificación
 	*/
-	void decodificar(string& dmsg);
+	void decodificar(string dmsg);
   
     private:
 
