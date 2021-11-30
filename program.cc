@@ -174,7 +174,7 @@ int main() {
 
             cout << "#" << cmd << " " << idp  << " " << b << endl;
 
-            if (not ptrs0.existe_patron(idp)) cout << "El patrón no existe" << endl;
+            if (not ptrs0.existe_patron(idp)) cout << "error: el patron no existe" << endl;
             else ptrs0.codificar_patron(idp,b); 
         }//final de función 11
 
