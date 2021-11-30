@@ -81,12 +81,34 @@ class Patron {
     private:
 	BinTree<int> ctr_ptr;
 
-
-
+	/** @brief Función inmersiva para iniciaizar el árbol binario de enteros «pb»
+	    \pre «ptr» es un arbol binario de enteros vacío
+	    \post El resultado es la incialización del árbol binario «pb»
+	*/
 	void init_ptr_im(BinTree<int>& pb);
+
+	/** @brief Función usada para pasar de string a arbol binario
+	    \pre «msg» es un string y i == 1
+	    \post La función devuelve un árbol binario de caracteres
+	*/
 	BinTree<char> msg_arbol(const string& msg, int i);
+
+	/** @brief Escribe el patrón de forma recursiva
+	    \pre «ptr» es un arbol binario de enteros inicializado
+	    \post El resultado es la impresión del valor del nodo del arbol
+	*/
 	void out_im_patron(const BinTree<int>& ptr);
+
+	/** @brief Inicializa el vector<int> offsets
+	    \pre «arb» es un arbol binario de chars inicializado, ptr es un arbol binario de enteros inicializado, ind es un entero == 1
+	    \post El resultado es la inicializacion de «offsets»
+	*/
 	void pintaPatron(const BinTree<char>& arb, const BinTree<int>& ptr,vector<int>& offsets,int ind);
+
+	/** @brief Función que llama a <pintaPatron> y recorre de forma recursiva el arbol arb
+	    \pre «arb» es un arbol binario de chars inicializado, ptr es un arbol binario de enteros inicializado, ind es un entero >= 1
+	    \post El resultado es la inicializacion de «offsets» mediante el uso de <pintaPatron>
+	*/
 	void recorreArb(const BinTree<char>& arb,vector<int>& offsets,int ind);
 
 

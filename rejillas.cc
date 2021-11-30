@@ -26,40 +26,6 @@ int Rejillas::add_rejilla(int n, int k) {
     //Si el valor de «n» es senar, el valor central se repetirá 4 veces, por ende
     if ( (n % 2) != 0 ) return 2; 
 
-    // == Implementación de la función para ver si una matriz es válida == //
-
-    //Esta implementación es mejor que esté en la propia clase de Rejilla
-    // == LO SIGUIENTE HASTA LA MARCA CP_REJILLA_METODO SE HA DE COPIAR //
-    /*
-    for (int i = 0; i < k; i++) {
-
-	int x = aux.ret_fila(i);
-	int y = aux.ret_columna(i);
-	int tempx; //valor auxiliar
-
-	for (int j = 0; j < 3; j++) {
-
-	    if (mat_rej[x][y].second) return 2;
-	    mat_rej[ x ][ y ].first = j;
-	    mat_rej[ x ][ y ].second = true;
-
-	    tempx = x;
-	    x = n - 1 - y;
-	    y = tempx;
-
-	} //Mirar las 3 rotaciones
-    } //Mirar las K posiciones
-
-    for (int i = 0; i < n; i++) {
-	for (int j = 0; j < n; j++) {
-
-	if (! mat_rej[i][j]) return 2;
-
-      }
-    } //Acaba la comprobación de espacios vacíos
-    */
-    // MARCA CP_REJILLA_METODO // 
-
     if (!aux.valida()) return 2;
 
     cjt_rejillas.push_back( aux );
@@ -84,20 +50,12 @@ bool Rejillas::existe_rejilla(int idr) {
 
 void Rejillas::leer_rejillas(int r) {
 
-  //    cjt_rejillas = vector<Rejilla>(r);
-
     for (int i = 0; i < r; i++) {
 
 	int n,k;
 	cin >> n >> k;
 
 	add_rejilla(n,k);
-	//cout << "Ha fet add_rejilla" << endl;
-	//Rejilla aux(n,k);
-	//aux.leer_huecos();
-
-	//cjt_rejillas.push_back( aux );
-	//cjt_rejillas[i] = aux;
 
     }
 } //Final de leer rejillas

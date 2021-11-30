@@ -15,10 +15,6 @@ Rejilla::Rejilla(int n, int npos) {
 
     dim = n;
     k = npos;
-    //vector < pair<int,int> > huecos = vector< pair<int,int> >(k)  ; //el primer entero es: fila, el segundo entero es: columna
-
-    //vector < vector< pair<int,bool> > > mat_rej = vector < vector< pair<int,bool> > >(dim, vector< pair<int,bool> >(dim, make_pair(0,false))) ; //int = número de rotación, bool = ocupado/no ocupado
-
 }
 
 //Consultoras
@@ -54,9 +50,6 @@ void Rejilla::leer_huecos() {
 	int x,y;
 	cin >> x >> y;
 	huecos.push_back(make_pair(x,y));
-	// cin >> huecos[i].first;
-	// cin >> huecos[i].second;
-	//cout << "S'ha inserit un forat" << endl;
 
     }
 
@@ -103,22 +96,15 @@ bool Rejilla::valida() {
 
 } //Final de la función «valida()»
 
-//void Rejilla::rellenar_matriz() {
-//
-//
-//}
-
 void Rejilla::escribir_huecos() {
 
     for (int rot = 1; rot <= 4; rot++) {
 	int c = 0;
 	for (int i = 0; i < dim; i++) {
 	    for (int j = 0; j < dim; j++) {
-		//cout << "abans del if de escribir hueco" << endl;
 	      
 		if (mat_rej[i][j].first == rot) {
 		    cout << "(" << i + 1 << "," << j + 1 << ")";
-		    //if ((i < dim-1 and j < dim-1) or i < dim-1) cout << " ";
 		    ++c;
 		    if (c < k) cout << " ";
 		}
@@ -226,46 +212,7 @@ void Rejilla::decodificar(string dmsg) {
 	    }
 	}
 	if (b == nbox - 1) cout << "\"" << endl;
-	
     }
-    ////Rellenamos la matriz aux
-
-    //for(int b = 0; b < nbox; b++) {
-
-    //	vector< vector<char> > aux( dim , vector<char>(dim, ' ') );
-    //	for(int i = 0; i < dim; i++) {
-    //	    for(int j = 0; j < dim; j++) {
-
-    //	    if (exit) break;
-    //	    aux[i][j] = dmsg[m];
-
-    //	    if (m == dmsg.size()) exit = true;
-    //	    m++;
-
-    //	    }
-    //	}
-
-    //	//Una vez rellenada la matriz aux, lo que haremos será decodificar mediante mat_rej el string dmsg
-
-    //	//Volvemos a establecer el entero «m» a 0
-    //	
-    //	//Iteramos por cada rotación
-    //	for(int rot = 1; rot <= 4; rot++) { 
-    //	    //Iteramos por «mat_rej»
-    //	    for (int i = 0; i < dim; i++) {
-    //		for (int j = 0; j < dim; j++) {
-
-    //		    if (exit) break;
-    //		    if ( mat_rej[i][j].first == rot ) {
-    //			dmsg[m] = aux[i][j];
-    //			if (m == dmsg.size()) exit = true;
-    //			m++;
-    //		    }
-    //		}
-    //	    } // Final de la iteración de mat_rej
-    //	} // Final iteración por cada rotación
-    //} //Final de iteración por bloques
-    
 
 } //final de la funció general
 

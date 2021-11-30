@@ -69,7 +69,6 @@ void Patron::escribir_patron() {
 //Crida inicial: arrel = msg_arbol(missatge,1)
 BinTree<char> Patron::msg_arbol(const string& msg, int i) {
 
-  //cout << "debug: entra en msg_arbol" << endl;
   BinTree<char> izq = BinTree<char>();
   BinTree<char> der = BinTree<char>();
   int i_izq = 2*i;
@@ -86,7 +85,6 @@ BinTree<char> Patron::msg_arbol(const string& msg, int i) {
 void Patron::pintaPatron(const BinTree<char>& arb, const BinTree<int>& ptr,vector<int>& offsets,int ind) {
 
 
-  //cout << "debug: entra en pintaPatron" << endl;
     offsets[ind-1] = ptr.value();
     if ( (not arb.left().empty()) and (not ptr.left().empty())) pintaPatron(arb.left(),ptr.left(),offsets,2*ind);
     if ( (not arb.right().empty()) and (not ptr.right().empty())) pintaPatron(arb.right(),ptr.right(),offsets,2*ind+1);
@@ -96,7 +94,6 @@ void Patron::pintaPatron(const BinTree<char>& arb, const BinTree<int>& ptr,vecto
 //Crida inicial: raiz_arbol,offsets,1
 void Patron::recorreArb(const BinTree<char>& arb,vector<int>& offsets,int ind) {
 
-  //cout << "debug: entra en recorreArb" << endl;
     BinTree<int> ptr = ctr_ptr;
     if (offsets[ind-1] == -1) pintaPatron(arb,ptr,offsets,ind);
     if ( (not arb.left().empty()) ) recorreArb(arb.left(),offsets,2*ind);
@@ -148,7 +145,6 @@ void Patron::decod(int b,const string& msg) {
     int mod = sizemsg%b;
     //ceiling vago
     int num_arb = ( sizemsg/b ) + ( mod != 0);
-    //cout << "debug:: msg " << msg << endl;
     cout << "\"";
     for (int i = 0; i < num_arb; i++) {
 
@@ -167,18 +163,6 @@ void Patron::decod(int b,const string& msg) {
       //sizess és la variable del tamany del string substring
       vector<int> offsets(sizess,-1); //offsets de los carácteres
       recorreArb(am,offsets,1);
-      
-      //DEBUG
-      //for (int o = 0; o < offsets.size(); o++) {
-      //	cout << offsets[o]; 
-      //}
-      //cout << endl;
-      //for (int o = 0; o < substring.size(); o++) {
-      //	cout << substring[o]; 
-      //}
-      //cout << endl;
-      //cout << "debug:: sizess: " << sizess << endl;
-      //FIN DEBUG
       
       for (int k = 0; k < sizess; k++) {
 
