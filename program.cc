@@ -172,7 +172,7 @@ int main() {
             int b; //tamaño de los bloques
             cin >> b;
 
-            cout << "#" << cmd << " " << idp << endl;
+            cout << "#" << cmd << " " << idp  << " " << b << endl;
 
             if (not ptrs0.existe_patron(idp)) cout << "El patrón no existe" << endl;
             else ptrs0.codificar_patron(idp,b); 
