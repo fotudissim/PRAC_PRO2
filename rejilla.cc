@@ -167,7 +167,7 @@ void Rejilla::codificar(string msg) {
 		    if (exit) break;
 		    if ( mat_rej[i][j].first == rot ) {
 			aux[i][j] = msg[ m ];
-			if (m == msg.size()) {
+			if (m == msg.size()-1) {
 			    exit = true;
 			}
 			else m++;
