@@ -33,9 +33,9 @@ bool \mbox{\hyperlink{classRejilla_aafe642d35e8a72c7ecb01301c5942f2d}{valida}} (
 \begin{DoxyCompactList}\small\item\em Inicializa la matriz «mat\+\_\+rej», en caso que la matriz no sea válida, devuelve \char`\"{}\+FALSE\char`\"{}. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classRejilla_af7164149ffba3b1db43020888c46a7b1}{escribir\+\_\+huecos}} ()
 \begin{DoxyCompactList}\small\item\em Imprime por pantalla los huecos en sus diferentes posiciones y giros. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classRejilla_a83c9bf77a8b7ce34cbbeaf778ac721b5}{codificar}} (string msg)
+void \mbox{\hyperlink{classRejilla_ad25f68ce6bdc915c9a225aa9b7c9b037}{codificar}} (const string \&msg)
 \begin{DoxyCompactList}\small\item\em Imprime por pantalla la codificación del mensage pasado como parámetro. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classRejilla_a63e1fee310b1ebd43f6b6a9d899e786c}{decodificar}} (string dmsg)
+void \mbox{\hyperlink{classRejilla_aa87b59a99840f62cbb5060ceee3c4375}{decodificar}} (const string \&dmsg)
 \begin{DoxyCompactList}\small\item\em Decodifica el mensaje pasado como parámetro. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Atributos privados}
 \begin{DoxyCompactItemize}
@@ -103,11 +103,11 @@ El resultado es una rejilla con información
 
 
 \doxysubsection{Documentación de las funciones miembro}
-\mbox{\Hypertarget{classRejilla_a83c9bf77a8b7ce34cbbeaf778ac721b5}\label{classRejilla_a83c9bf77a8b7ce34cbbeaf778ac721b5}} 
+\mbox{\Hypertarget{classRejilla_ad25f68ce6bdc915c9a225aa9b7c9b037}\label{classRejilla_ad25f68ce6bdc915c9a225aa9b7c9b037}} 
 \index{Rejilla@{Rejilla}!codificar@{codificar}}
 \index{codificar@{codificar}!Rejilla@{Rejilla}}
 \doxysubsubsection{\texorpdfstring{codificar()}{codificar()}}
-{\footnotesize\ttfamily void Rejilla\+::codificar (\begin{DoxyParamCaption}\item[{string}]{msg }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Rejilla\+::codificar (\begin{DoxyParamCaption}\item[{const string \&}]{msg }\end{DoxyParamCaption})}
 
 
 
@@ -121,11 +121,11 @@ Implementación\+: función codificar.
 \begin{DoxyPostcond}{Postcondición}
 Imprime por pantalla la codificación del mensaje pasado como parámetro 
 \end{DoxyPostcond}
-\mbox{\Hypertarget{classRejilla_a63e1fee310b1ebd43f6b6a9d899e786c}\label{classRejilla_a63e1fee310b1ebd43f6b6a9d899e786c}} 
+\mbox{\Hypertarget{classRejilla_aa87b59a99840f62cbb5060ceee3c4375}\label{classRejilla_aa87b59a99840f62cbb5060ceee3c4375}} 
 \index{Rejilla@{Rejilla}!decodificar@{decodificar}}
 \index{decodificar@{decodificar}!Rejilla@{Rejilla}}
 \doxysubsubsection{\texorpdfstring{decodificar()}{decodificar()}}
-{\footnotesize\ttfamily void Rejilla\+::decodificar (\begin{DoxyParamCaption}\item[{string}]{dmsg }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Rejilla\+::decodificar (\begin{DoxyParamCaption}\item[{const string \&}]{dmsg }\end{DoxyParamCaption})}
 
 
 
@@ -137,7 +137,7 @@ Implementación\+: función decodificar.
 «dmsg» es un string 
 \end{DoxyPrecond}
 \begin{DoxyPostcond}{Postcondición}
-«dmsg» se ve editado por la decodificación 
+Imprime por pantalla la codificación del mensaje pasado como parámetro 
 \end{DoxyPostcond}
 \mbox{\Hypertarget{classRejilla_af7164149ffba3b1db43020888c46a7b1}\label{classRejilla_af7164149ffba3b1db43020888c46a7b1}} 
 \index{Rejilla@{Rejilla}!escribir\_huecos@{escribir\_huecos}}

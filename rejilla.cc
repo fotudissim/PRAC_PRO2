@@ -129,7 +129,7 @@ void Rejilla::escribir_huecos() {
 
 
 /** @brief Implementación: función codificar */
-void Rejilla::codificar(string msg) {
+void Rejilla::codificar(const string& msg) {
 
     /* Se ha de hacer una matriz para cada (long_texto/dim²)
        Es decir, debemos primero hacer un «int box = ceil (msg.size() / (dim * dim))»
@@ -183,7 +183,7 @@ void Rejilla::codificar(string msg) {
 
 
 /** @brief Implementación: función decodificar */
-void Rejilla::decodificar(string dmsg) {
+void Rejilla::decodificar(const string& dmsg) {
 
 
     /* Se ha de hacer una matriz para cada (long_texto/dim²)

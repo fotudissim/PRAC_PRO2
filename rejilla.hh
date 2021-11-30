@@ -120,13 +120,13 @@ class Rejilla {
 	    \pre «msg» es un string
 	    \post Imprime por pantalla la codificación del mensaje pasado como parámetro
 	*/
-	void codificar(string msg);
+	void codificar(const string& msg);
 
 	/** @brief Decodifica el mensaje pasado como parámetro
 	    \pre «dmsg» es un string
-	    \post «dmsg» se ve editado por la decodificación
+	    \post Imprime por pantalla la codificación del mensaje pasado como parámetro
 	*/
-	void decodificar(string dmsg);
+	void decodificar(const string& dmsg);
   
     private:
 
